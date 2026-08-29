@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en"><head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Furniture - Product Catalogue</title>
+    <meta name="description" content="UK Furniture - Simple, clean product catalogue with instant WhatsApp ordering.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React & ReactDOM UMD -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin=""></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin=""></script>
+    <!-- Babel for JSX compilation in browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="/_aistudio-iframe.js?v=2f1c016a"></script><script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@2.0.4"></script><style>.aistudio-hover-highlight { box-shadow: inset 0 0 0 0.5px white, inset 0 0 0 1.5px rgba(128,128,128,0.6) !important; }.aistudio-active-highlight { outline: 2px solid #87a9ff !important; outline-offset: -2px !important; box-shadow: 0 0 0 0.5px rgba(0,0,0,0.3), inset 0 0 0 0.5px rgba(0,0,0,0.3) !important; }.aistudio-generating-blur { filter: blur(5px) grayscale(100%) brightness(28%) !important; transition: filter 0.3s ease; }#aistudio-focus-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: #87a9ff; border-radius: 12px; z-index: 10000; padding: 8px; color: #32302c; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }#aistudio-hover-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: rgba(128,128,128,0.6); border-radius: 12px; z-index: 10000; padding: 8px; color: white; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }.aistudio-img-icon { display: none; vertical-align: middle; pointer-events: auto; cursor: pointer; }.aistudio-img-icon.visible { display: inline-flex; }#aistudio-focus-mode-tag .aistudio-img-icon { position: relative; width: 26px; height: 26px; background: #32302c; border-radius: 6px; margin: -4px -4px -4px 0; }#aistudio-focus-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-hover-mode-tag .aistudio-img-icon { position: relative; width: 18px; height: 18px; margin-left: 4px; }#aistudio-hover-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 0; left: 0; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-focus-mode-tag .aistudio-img-icon:hover, #aistudio-hover-mode-tag .aistudio-img-icon:hover { background: #424242 !important; }#aistudio-focus-mode-tag .aistudio-img-icon:active, #aistudio-hover-mode-tag .aistudio-img-icon:active { background: #393f51 !important; }</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.left-2\.5{left:0.625rem}.right-2\.5{right:0.625rem}.top-0{top:0px}.top-2\.5{top:0.625rem}.z-40{z-index:40}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-4{width:1rem}.w-5{width:1.25rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-neutral-100{--tw-border-opacity:1;border-color:rgb(245 245 245 / var(--tw-border-opacity, 1))}.border-neutral-200{--tw-border-opacity:1;border-color:rgb(229 229 229 / var(--tw-border-opacity, 1))}.border-neutral-300{--tw-border-opacity:1;border-color:rgb(212 212 212 / var(--tw-border-opacity, 1))}.border-neutral-900{--tw-border-opacity:1;border-color:rgb(23 23 23 / var(--tw-border-opacity, 1))}.bg-neutral-100{--tw-bg-opacity:1;background-color:rgb(245 245 245 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-neutral-50{--tw-bg-opacity:1;background-color:rgb(250 250 250 / var(--tw-bg-opacity, 1))}.bg-neutral-900{--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pb-2\.5{padding-bottom:0.625rem}.pt-2{padding-top:0.5rem}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-neutral-900{--tw-text-opacity:1;color:rgb(23 23 23 / var(--tw-text-opacity, 1))}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-neutral-500{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity, 1))}.text-neutral-600{--tw-text-opacity:1;color:rgb(82 82 82 / var(--tw-text-opacity, 1))}.text-neutral-700{--tw-text-opacity:1;color:rgb(64 64 64 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-neutral-400:hover{--tw-border-opacity:1;border-color:rgb(163 163 163 / var(--tw-border-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-neutral-200:hover{--tw-bg-opacity:1;background-color:rgb(229 229 229 / var(--tw-bg-opacity, 1))}.hover\:bg-neutral-800:hover{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-neutral-900:focus{--tw-border-opacity:1;border-color:rgb(23 23 23 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:gap-3{gap:0.75rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:inline-block{display:inline-block}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:inline{display:inline}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style><script>function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+var _React = React,
+  useState = _React.useState,
+  useEffect = _React.useEffect,
+  useMemo = _React.useMemo;
+var WHATSAPP_NUMBER = '+447862600142';
+var WHATSAPP_RAW = '447862600142';
+var CATEGORIES = ['All Products', 'Sofas & Couches', 'Beds & Mattresses', 'Dining Sets', 'Living & Tables', 'Wardrobes & Storage'];
+var INITIAL_PRODUCTS = [{
+  id: 'prod-1',
+  code: 'UKF-101',
+  title: 'Kensington Velvet 3-Seater Chesterfield Sofa',
+  category: 'Sofas & Couches',
+  originalPrice: 899,
+  salePrice: 599,
+  colours: ['Royal Navy', 'Emerald Green', 'Charcoal Grey', 'Champagne Cream', 'Mustard Yellow'],
+  images: ['https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=1000&q=80'],
+  description: 'The Kensington Chesterfield 3-Seater Sofa combines timeless British craftsmanship with modern deep-foam comfort. Features hand-tufted button detailing, durable premium velvet upholstery, scrolled arms, and solid turned wooden feet.',
+  dimensions: 'W: 215cm | D: 95cm | H: 78cm',
+  material: 'Premium Stain-Resistant Velvet & Solid Birch Frame',
+  inStock: true
+}, {
+  id: 'prod-2',
+  code: 'UKF-201',
+  title: 'Windsor Ottoman Gas-Lift Storage Bed (King Size)',
+  category: 'Beds & Mattresses',
+  originalPrice: 749,
+  salePrice: 479,
+  colours: ['Slate Grey', 'Oatmeal Linen', 'Midnight Blue', 'Silver Birch'],
+  images: ['https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1578898887932-dce23a595ad4?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=80'],
+  description: 'Maximize your bedroom space with the Windsor Ottoman Bed. Featuring an easy hydraulic gas-lift mechanism that opens effortlessly to reveal full under-bed storage.',
+  dimensions: 'King (5ft): W: 162cm | L: 215cm | Headboard H: 128cm',
+  material: 'Textured Weave Linen Fabric & Reinforced Steel Hydraulic Base',
+  inStock: true
+}, {
+  id: 'prod-3',
+  code: 'UKF-301',
+  title: 'Cotswold Solid Natural Oak 6-Seater Dining Table',
+  category: 'Dining Sets',
+  originalPrice: 699,
+  salePrice: 449,
+  colours: ['Natural Oak', 'Smoked Walnut', 'Washed Ash', 'Rustic Dark Oak'],
+  images: ['https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1597072689227-8882273e8f6a?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?auto=format&fit=crop&w=1000&q=80'],
+  description: 'Crafted from sustainable European white oak, the Cotswold Dining Table features a robust 40mm thick solid top with chamfered edges and sturdy tapered legs.',
+  dimensions: 'L: 180cm | W: 90cm | H: 76cm',
+  material: '100% Solid European Oak',
+  inStock: true
+}, {
+  id: 'prod-4',
+  code: 'UKF-102',
+  title: 'Chelsea Modern Corner Reversible Chaise Sofa',
+  category: 'Sofas & Couches',
+  originalPrice: 999,
+  salePrice: 649,
+  colours: ['Graphite Grey', 'Sand Beige', 'Forest Green', 'Denim Blue'],
+  images: ['https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80'],
+  description: 'Designed for modern UK living rooms, the Chelsea Corner Sofa has a modular reversible chaise section that can be positioned on either the left or right side.',
+  dimensions: 'W: 240cm | Chaise D: 155cm | H: 85cm',
+  material: 'Hardwearing Chenille Bouclé Weave',
+  inStock: true
+}];
+var SAMPLE_IMAGES = ['https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80', 'https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=1000&q=80'];
+function App() {
+  var _useState = useState(function () {
+      try {
+        var saved = localStorage.getItem('uk_furniture_products');
+        if (saved) return JSON.parse(saved);
+      } catch (_unused) {}
+      return INITIAL_PRODUCTS;
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    products = _useState2[0],
+    setProducts = _useState2[1];
+  var _useState3 = useState(function () {
+      try {
+        var saved = localStorage.getItem('uk_furniture_cart');
+        if (saved) return JSON.parse(saved);
+      } catch (_unused2) {}
+      return [];
+    }),
+    _useState4 = _slicedToArray(_useState3, 2),
+    cart = _useState4[0],
+    setCart = _useState4[1];
+  var _useState5 = useState(''),
+    _useState6 = _slicedToArray(_useState5, 2),
+    search = _useState6[0],
+    setSearch = _useState6[1];
+  var _useState7 = useState('All Products'),
+    _useState8 = _slicedToArray(_useState7, 2),
+    category = _useState8[0],
+    setCategory = _useState8[1];
+  var _useState9 = useState(null),
+    _useState0 = _slicedToArray(_useState9, 2),
+    selectedProduct = _useState0[0],
+    setSelectedProduct = _useState0[1];
+  var _useState1 = useState(false),
+    _useState10 = _slicedToArray(_useState1, 2),
+    isCartOpen = _useState10[0],
+    setIsCartOpen = _useState10[1];
+  var _useState11 = useState(false),
+    _useState12 = _slicedToArray(_useState11, 2),
+    isAdminOpen = _useState12[0],
+    setIsAdminOpen = _useState12[1];
+  var _useState13 = useState(null),
+    _useState14 = _slicedToArray(_useState13, 2),
+    editingProduct = _useState14[0],
+    setEditingProduct = _useState14[1];
+  var _useState15 = useState(null),
+    _useState16 = _slicedToArray(_useState15, 2),
+    toast = _useState16[0],
+    setToast = _useState16[1];
+
+  // Checkout form state
+  var _useState17 = useState({
+      fullName: '',
+      phone: '',
+      address: '',
+      postcode: ''
+    }),
+    _useState18 = _slicedToArray(_useState17, 2),
+    customer = _useState18[0],
+    setCustomer = _useState18[1];
+  useEffect(function () {
+    localStorage.setItem('uk_furniture_products', JSON.stringify(products));
+  }, [products]);
+  useEffect(function () {
+    localStorage.setItem('uk_furniture_cart', JSON.stringify(cart));
+  }, [cart]);
+  var showToast = function showToast(msg) {
+    setToast(msg);
+    setTimeout(function () {
+      return setToast(null);
+    }, 2500);
+  };
+  var handleAddToCart = function handleAddToCart(product, colour) {
+    var qty = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+    setCart(function (prev) {
+      var index = prev.findIndex(function (item) {
+        return item.productId === product.id && item.colour === colour;
+      });
+      if (index > -1) {
+        var updated = _toConsumableArray(prev);
+        updated[index].qty += qty;
+        return updated;
+      }
+      return [].concat(_toConsumableArray(prev), [{
+        id: "".concat(product.id, "-").concat(colour, "-").concat(Date.now()),
+        productId: product.id,
+        code: product.code,
+        title: product.title,
+        image: product.images[0],
+        colour: colour,
+        salePrice: product.salePrice,
+        qty: qty
+      }]);
+    });
+    showToast("Added \"".concat(product.title, "\" to cart"));
+  };
+  var filteredProducts = useMemo(function () {
+    return products.filter(function (p) {
+      var matchCat = category === 'All Products' || p.category === category;
+      var q = search.toLowerCase().trim();
+      if (!q) return matchCat;
+      var matchSearch = p.title.toLowerCase().includes(q) || p.code.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || p.colours.some(function (c) {
+        return c.toLowerCase().includes(q);
+      });
+      return matchCat && matchSearch;
+    });
+  }, [products, category, search]);
+  var totalCartCount = cart.reduce(function (acc, item) {
+    return acc + item.qty;
+  }, 0);
+  var totalAmount = cart.reduce(function (acc, item) {
+    return acc + item.salePrice * item.qty;
+  }, 0);
+  var handlePlaceOrder = function handlePlaceOrder(e) {
+    e.preventDefault();
+    if (cart.length === 0) return;
+    var customerBlock = "NEW ORDER\n\nCustomer Name: ".concat(customer.fullName, "\nCustomer Phone: ").concat(customer.phone, "\nDelivery Address: ").concat(customer.address, "\nPostcode: ").concat(customer.postcode.toUpperCase(), "\n");
+    var productBlocks = cart.map(function (item) {
+      return "Product: ".concat(item.title, "\nProduct Code: ").concat(item.code, "\nColour: ").concat(item.colour, "\nQuantity: ").concat(item.qty, "\nPrice: \xA3").concat((item.salePrice * item.qty).toLocaleString('en-GB'));
+    }).join('\n\n');
+    var totalBlock = "\n\nTotal: \xA3".concat(totalAmount.toLocaleString('en-GB'), "\n\nOrder request will be confirmed through WhatsApp.");
+    var msg = "".concat(customerBlock, "\n").concat(productBlocks).concat(totalBlock);
+    var url = "https://wa.me/".concat(WHATSAPP_RAW, "?text=").concat(encodeURIComponent(msg));
+    window.open(url, '_blank');
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    className: "min-h-screen flex flex-col bg-neutral-100"
+  }, /*#__PURE__*/React.createElement("header", {
+    className: "sticky top-0 z-40 bg-white border-b border-neutral-200 shadow-xs"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center gap-2"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "#",
+    className: "font-bold text-xl sm:text-2xl tracking-tight text-neutral-900"
+  }, "UK ", /*#__PURE__*/React.createElement("span", {
+    className: "text-neutral-700 font-semibold"
+  }, "Furniture")), /*#__PURE__*/React.createElement("span", {
+    className: "hidden md:inline-block px-2 py-0.5 rounded text-xs font-medium bg-neutral-100 text-neutral-600 border"
+  }, "Direct UK Catalogue")), /*#__PURE__*/React.createElement("div", {
+    className: "hidden sm:flex flex-1 max-w-md mx-4"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    value: search,
+    onChange: function onChange(e) {
+      return setSearch(e.target.value);
+    },
+    placeholder: "Search sofas, beds, dining, product code...",
+    className: "w-full px-4 py-2 text-sm bg-neutral-50 border border-neutral-300 rounded-md focus:bg-white focus:outline-none focus:border-neutral-900"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center gap-2 sm:gap-3"
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://wa.me/".concat(WHATSAPP_RAW, "?text=") + encodeURIComponent('Hello UK Furniture, I have an inquiry.'),
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md text-xs sm:text-sm font-medium"
+  }, /*#__PURE__*/React.createElement("span", null, "WhatsApp"), /*#__PURE__*/React.createElement("span", {
+    className: "font-mono text-xs hidden lg:inline"
+  }, WHATSAPP_NUMBER)), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      var htmlContent = '<!doctype html>\n' + document.documentElement.outerHTML;
+      var blob = new Blob([htmlContent], {
+        type: 'text/html'
+      });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    },
+    className: "px-2.5 py-1.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md text-xs sm:text-sm font-medium flex items-center gap-1 shadow-xs",
+    title: "Download complete website as a single index.html file"
+  }, /*#__PURE__*/React.createElement("svg", {
+    className: "w-4 h-4",
+    fill: "none",
+    stroke: "currentColor",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: "2",
+    d: "M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+  })), /*#__PURE__*/React.createElement("span", null, "Download file")), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      setEditingProduct(null);
+      setIsAdminOpen(true);
+    },
+    className: "px-2.5 py-1.5 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 rounded-md text-xs sm:text-sm font-medium border border-neutral-300"
+  }, "Admin / Add"), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return setIsCartOpen(true);
+    },
+    className: "relative inline-flex items-center justify-center p-2 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md"
+  }, /*#__PURE__*/React.createElement("svg", {
+    className: "w-5 h-5",
+    fill: "none",
+    stroke: "currentColor",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: "2",
+    d: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+  })), totalCartCount > 0 && /*#__PURE__*/React.createElement("span", {
+    className: "absolute -top-1.5 -right-1.5 bg-emerald-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center border-2 border-white"
+  }, totalCartCount)))), /*#__PURE__*/React.createElement("div", {
+    className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2.5 flex items-center gap-2 overflow-x-auto scrollbar-none border-t border-neutral-100 pt-2"
+  }, CATEGORIES.map(function (cat) {
+    return /*#__PURE__*/React.createElement("button", {
+      key: cat,
+      onClick: function onClick() {
+        return setCategory(cat);
+      },
+      className: "whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors ".concat(category === cat ? 'bg-neutral-900 text-white' : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200')
+    }, cat);
+  }))), /*#__PURE__*/React.createElement("main", {
+    className: "flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex items-center justify-between mb-4 pb-2 border-b"
+  }, /*#__PURE__*/React.createElement("h1", {
+    className: "text-base sm:text-lg font-bold"
+  }, category === 'All Products' ? 'All Furniture Listings' : category), /*#__PURE__*/React.createElement("span", {
+    className: "text-xs text-neutral-500 font-mono"
+  }, "(", filteredProducts.length, " items)")), filteredProducts.length === 0 ? /*#__PURE__*/React.createElement("div", {
+    className: "text-center py-16 bg-white rounded-lg border p-8"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "text-lg font-bold mb-1"
+  }, "No products found"), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      setSearch('');
+      setCategory('All Products');
+    },
+    className: "mt-2 px-4 py-2 bg-neutral-900 text-white rounded text-xs"
+  }, "Reset Filters")) : /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+  }, filteredProducts.map(function (product) {
+    var _useState19 = useState(product.colours[0] || 'Default'),
+      _useState20 = _slicedToArray(_useState19, 2),
+      colour = _useState20[0],
+      setColour = _useState20[1];
+    var _useState21 = useState(false),
+      _useState22 = _slicedToArray(_useState21, 2),
+      added = _useState22[0],
+      setAdded = _useState22[1];
+    var discount = Math.round((product.originalPrice - product.salePrice) / product.originalPrice * 100);
+    return /*#__PURE__*/React.createElement("div", {
+      key: product.id,
+      onClick: function onClick() {
+        return setSelectedProduct(product);
+      },
+      className: "group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "relative aspect-4/3 w-full bg-neutral-100 overflow-hidden"
+    }, /*#__PURE__*/React.createElement("img", {
+      src: product.images[0],
+      alt: product.title,
+      referrerPolicy: "no-referrer",
+      className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "absolute top-2.5 left-2.5"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded"
+    }, product.code)), discount > 0 && /*#__PURE__*/React.createElement("div", {
+      className: "absolute top-2.5 right-2.5"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded"
+    }, "SAVE ", discount, "%"))), /*#__PURE__*/React.createElement("div", {
+      className: "p-4 flex-1 flex flex-col justify-between"
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+      className: "text-xs text-neutral-500 uppercase tracking-wider mb-1"
+    }, product.category), /*#__PURE__*/React.createElement("h3", {
+      className: "font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2"
+    }, product.title), /*#__PURE__*/React.createElement("div", {
+      className: "flex items-baseline gap-2 mb-3"
+    }, /*#__PURE__*/React.createElement("span", {
+      className: "text-lg font-bold font-mono"
+    }, "\xA3", product.salePrice.toLocaleString('en-GB')), product.originalPrice > product.salePrice && /*#__PURE__*/React.createElement("span", {
+      className: "text-xs text-neutral-400 line-through font-mono"
+    }, "\xA3", product.originalPrice.toLocaleString('en-GB'))), /*#__PURE__*/React.createElement("div", {
+      className: "mb-3",
+      onClick: function onClick(e) {
+        return e.stopPropagation();
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "flex flex-wrap gap-1"
+    }, product.colours.slice(0, 3).map(function (c) {
+      return /*#__PURE__*/React.createElement("button", {
+        key: c,
+        onClick: function onClick() {
+          return setColour(c);
+        },
+        className: "text-[11px] px-1.5 py-0.5 rounded border ".concat(colour === c ? 'bg-neutral-900 text-white border-neutral-900' : 'bg-neutral-50 text-neutral-700 border-neutral-200')
+      }, c);
+    })))), /*#__PURE__*/React.createElement("button", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        handleAddToCart(product, colour);
+        setAdded(true);
+        setTimeout(function () {
+          return setAdded(false);
+        }, 1500);
+      },
+      className: "w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors ".concat(added ? 'bg-emerald-600 text-white' : 'bg-neutral-900 hover:bg-neutral-800 text-white')
+    }, added ? 'Added to Cart!' : 'Add to Cart')));
+  }))), selectedProduct && /*#__PURE__*/React.createElement("div", {
+    className: "fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-3 sm:p-6",
+    onClick: function onClick() {
+      return setSelectedProduct(null);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-white w-full max-w-4xl rounded-xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col",
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "px-4 py-3 border-b bg-neutral-50 flex items-center justify-between"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "font-mono text-xs font-semibold px-2 py-0.5 bg-neutral-900 text-white rounded"
+  }, selectedProduct.code), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return setSelectedProduct(null);
+    },
+    className: "text-neutral-500 hover:text-neutral-900 font-bold px-2"
+  }, "\u2715")), /*#__PURE__*/React.createElement("div", {
+    className: "p-4 sm:p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "space-y-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "aspect-4/3 bg-neutral-100 rounded-lg overflow-hidden border"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: selectedProduct.images[0],
+    alt: "",
+    referrerPolicy: "no-referrer",
+    className: "w-full h-full object-cover"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "flex gap-2 overflow-x-auto pb-2"
+  }, selectedProduct.images.map(function (img, i) {
+    return /*#__PURE__*/React.createElement("img", {
+      key: i,
+      src: img,
+      alt: "",
+      referrerPolicy: "no-referrer",
+      className: "w-16 h-14 object-cover rounded border shrink-0"
+    });
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-col justify-between space-y-4"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+    className: "text-xl sm:text-2xl font-bold mb-2"
+  }, selectedProduct.title), /*#__PURE__*/React.createElement("p", {
+    className: "text-2xl font-extrabold font-mono mb-4"
+  }, "\xA3", selectedProduct.salePrice.toLocaleString('en-GB')), /*#__PURE__*/React.createElement("p", {
+    className: "text-xs sm:text-sm text-neutral-600 mb-4"
+  }, selectedProduct.description), selectedProduct.dimensions && /*#__PURE__*/React.createElement("p", {
+    className: "text-xs font-mono mb-2"
+  }, "Dimensions: ", selectedProduct.dimensions)), /*#__PURE__*/React.createElement("div", {
+    className: "space-y-3"
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      handleAddToCart(selectedProduct, selectedProduct.colours[0]);
+      setSelectedProduct(null);
+    },
+    className: "w-full py-3 bg-neutral-900 text-white font-bold rounded text-sm"
+  }, "Add to Cart"), /*#__PURE__*/React.createElement("a", {
+    href: "https://wa.me/".concat(WHATSAPP_RAW, "?text=") + encodeURIComponent("Hello UK Furniture, I want to order product ".concat(selectedProduct.title, " (").concat(selectedProduct.code, ").")),
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "w-full py-2.5 bg-emerald-600 text-white font-medium rounded text-sm text-center block"
+  }, "Inquire on WhatsApp (", WHATSAPP_NUMBER, ")")))))), isCartOpen && /*#__PURE__*/React.createElement("div", {
+    className: "fixed inset-0 z-50 bg-black/60 flex justify-end",
+    onClick: function onClick() {
+      return setIsCartOpen(false);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "w-full max-w-lg bg-white h-full shadow-2xl flex flex-col justify-between",
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "px-5 py-4 border-b bg-neutral-50 flex items-center justify-between"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-bold text-lg"
+  }, "Your Cart (", totalCartCount, ")"), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return setIsCartOpen(false);
+    },
+    className: "text-neutral-500 font-bold px-2"
+  }, "\u2715")), /*#__PURE__*/React.createElement("div", {
+    className: "flex-1 overflow-y-auto p-5 space-y-4"
+  }, cart.length === 0 ? /*#__PURE__*/React.createElement("p", {
+    className: "text-center text-neutral-500 py-12"
+  }, "Your cart is empty.") : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    className: "space-y-3"
+  }, cart.map(function (item) {
+    return /*#__PURE__*/React.createElement("div", {
+      key: item.id,
+      className: "flex gap-3 p-3 bg-neutral-50 rounded border items-center"
+    }, /*#__PURE__*/React.createElement("img", {
+      src: item.image,
+      alt: "",
+      referrerPolicy: "no-referrer",
+      className: "w-14 h-14 object-cover rounded"
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "flex-1 min-w-0"
+    }, /*#__PURE__*/React.createElement("h4", {
+      className: "font-semibold text-xs sm:text-sm truncate"
+    }, item.title), /*#__PURE__*/React.createElement("p", {
+      className: "text-[11px] font-mono text-neutral-500"
+    }, "Code: ", item.code, " | Colour: ", item.colour), /*#__PURE__*/React.createElement("p", {
+      className: "text-xs font-bold mt-1"
+    }, "Qty: ", item.qty, " \xD7 \xA3", item.salePrice)), /*#__PURE__*/React.createElement("button", {
+      onClick: function onClick() {
+        return setCart(cart.filter(function (i) {
+          return i.id !== item.id;
+        }));
+      },
+      className: "text-rose-600 text-xs px-2"
+    }, "Remove"));
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "p-3 bg-neutral-100 rounded font-bold flex justify-between"
+  }, /*#__PURE__*/React.createElement("span", null, "Total:"), /*#__PURE__*/React.createElement("span", {
+    className: "font-mono"
+  }, "\xA3", totalAmount.toLocaleString('en-GB'))), /*#__PURE__*/React.createElement("form", {
+    onSubmit: handlePlaceOrder,
+    className: "space-y-3 pt-3 border-t"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "font-bold text-sm"
+  }, "Delivery Details"), /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    required: true,
+    placeholder: "Full Name *",
+    value: customer.fullName,
+    onChange: function onChange(e) {
+      return setCustomer(_objectSpread(_objectSpread({}, customer), {}, {
+        fullName: e.target.value
+      }));
+    },
+    className: "w-full p-2 text-sm border rounded"
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "tel",
+    required: true,
+    placeholder: "Phone Number *",
+    value: customer.phone,
+    onChange: function onChange(e) {
+      return setCustomer(_objectSpread(_objectSpread({}, customer), {}, {
+        phone: e.target.value
+      }));
+    },
+    className: "w-full p-2 text-sm border rounded"
+  }), /*#__PURE__*/React.createElement("textarea", {
+    required: true,
+    rows: 2,
+    placeholder: "Full Delivery Address *",
+    value: customer.address,
+    onChange: function onChange(e) {
+      return setCustomer(_objectSpread(_objectSpread({}, customer), {}, {
+        address: e.target.value
+      }));
+    },
+    className: "w-full p-2 text-sm border rounded"
+  }), /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    required: true,
+    placeholder: "UK Postcode *",
+    value: customer.postcode,
+    onChange: function onChange(e) {
+      return setCustomer(_objectSpread(_objectSpread({}, customer), {}, {
+        postcode: e.target.value
+      }));
+    },
+    className: "w-full p-2 text-sm border rounded uppercase"
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "submit",
+    className: "w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded text-sm shadow-md"
+  }, "Send Order to WhatsApp")))))), isAdminOpen && /*#__PURE__*/React.createElement("div", {
+    className: "fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-3",
+    onClick: function onClick() {
+      return setIsAdminOpen(false);
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "bg-white w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col",
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "px-5 py-4 bg-neutral-900 text-white flex items-center justify-between"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "font-bold text-base"
+  }, "Admin Panel \u2014 Add / Manage Products"), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return setIsAdminOpen(false);
+    },
+    className: "text-neutral-400 font-bold"
+  }, "\u2715")), /*#__PURE__*/React.createElement("div", {
+    className: "p-5 overflow-y-auto space-y-4"
+  }, /*#__PURE__*/React.createElement("form", {
+    onSubmit: function onSubmit(e) {
+      e.preventDefault();
+      var form = e.target;
+      var newProd = {
+        id: "prod-".concat(Date.now()),
+        code: "UKF-".concat(Math.floor(100 + Math.random() * 900)),
+        title: form.title.value,
+        category: form.category.value,
+        originalPrice: Number(form.origPrice.value) || Number(form.salePrice.value),
+        salePrice: Number(form.salePrice.value),
+        colours: form.colours.value.split(',').map(function (s) {
+          return s.trim();
+        }).filter(Boolean),
+        description: form.desc.value,
+        images: [].concat(SAMPLE_IMAGES),
+        inStock: true
+      };
+      setProducts([newProd].concat(_toConsumableArray(products)));
+      setIsAdminOpen(false);
+      showToast("Added product ".concat(newProd.code));
+    },
+    className: "space-y-3"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Product Title *"), /*#__PURE__*/React.createElement("input", {
+    name: "title",
+    required: true,
+    placeholder: "e.g. Windsor Velvet Sofa",
+    className: "w-full p-2 text-sm border rounded"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-cols-2 gap-3"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Sale Price (\xA3) *"), /*#__PURE__*/React.createElement("input", {
+    name: "salePrice",
+    type: "number",
+    required: true,
+    placeholder: "499",
+    className: "w-full p-2 text-sm border rounded font-mono"
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Original Price (\xA3)"), /*#__PURE__*/React.createElement("input", {
+    name: "origPrice",
+    type: "number",
+    placeholder: "699",
+    className: "w-full p-2 text-sm border rounded font-mono"
+  }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Category *"), /*#__PURE__*/React.createElement("select", {
+    name: "category",
+    className: "w-full p-2 text-sm border rounded"
+  }, CATEGORIES.filter(function (c) {
+    return c !== 'All Products';
+  }).map(function (c) {
+    return /*#__PURE__*/React.createElement("option", {
+      key: c,
+      value: c
+    }, c);
+  }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Colours (comma separated) *"), /*#__PURE__*/React.createElement("input", {
+    name: "colours",
+    defaultValue: "Charcoal Grey, Navy Blue, Cream",
+    className: "w-full p-2 text-sm border rounded"
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    className: "block text-xs font-semibold mb-1"
+  }, "Description"), /*#__PURE__*/React.createElement("textarea", {
+    name: "desc",
+    rows: 2,
+    defaultValue: "High quality UK furniture.",
+    className: "w-full p-2 text-sm border rounded"
+  })), /*#__PURE__*/React.createElement("button", {
+    type: "submit",
+    className: "w-full py-2.5 bg-neutral-900 text-white font-bold rounded text-sm"
+  }, "Publish Product (Auto-generates Code & 10+ Gallery Images)")), /*#__PURE__*/React.createElement("div", {
+    className: "border-t pt-4"
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "font-bold text-sm mb-2"
+  }, "Existing Products (", products.length, ")"), /*#__PURE__*/React.createElement("div", {
+    className: "space-y-2 max-h-48 overflow-y-auto"
+  }, products.map(function (p) {
+    return /*#__PURE__*/React.createElement("div", {
+      key: p.id,
+      className: "flex items-center justify-between p-2 border rounded text-xs"
+    }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("strong", null, p.code), " \u2014 ", p.title, " (\xA3", p.salePrice, ")"), /*#__PURE__*/React.createElement("button", {
+      onClick: function onClick() {
+        return setProducts(products.filter(function (x) {
+          return x.id !== p.id;
+        }));
+      },
+      className: "text-rose-600 hover:underline"
+    }, "Delete"));
+  })))))), toast && /*#__PURE__*/React.createElement("div", {
+    className: "fixed bottom-6 right-4 z-50 bg-neutral-900 text-white text-xs px-4 py-2.5 rounded shadow-xl"
+  }, toast));
+}
+ReactDOM.render(/*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiSW5saW5lIEJhYmVsIHNjcmlwdCJdLCJzb3VyY2VzQ29udGVudCI6WyJcbiAgICAgIGNvbnN0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlTWVtbyB9ID0gUmVhY3Q7XG5cbiAgICAgIGNvbnN0IFdIQVRTQVBQX05VTUJFUiA9ICcrNDQ3ODYyNjAwMTQyJztcbiAgICAgIGNvbnN0IFdIQVRTQVBQX1JBVyA9ICc0NDc4NjI2MDAxNDInO1xuXG4gICAgICBjb25zdCBDQVRFR09SSUVTID0gW1xuICAgICAgICAnQWxsIFByb2R1Y3RzJyxcbiAgICAgICAgJ1NvZmFzICYgQ291Y2hlcycsXG4gICAgICAgICdCZWRzICYgTWF0dHJlc3NlcycsXG4gICAgICAgICdEaW5pbmcgU2V0cycsXG4gICAgICAgICdMaXZpbmcgJiBUYWJsZXMnLFxuICAgICAgICAnV2FyZHJvYmVzICYgU3RvcmFnZSdcbiAgICAgIF07XG5cbiAgICAgIGNvbnN0IElOSVRJQUxfUFJPRFVDVFMgPSBbXG4gICAgICAgIHtcbiAgICAgICAgICBpZDogJ3Byb2QtMScsXG4gICAgICAgICAgY29kZTogJ1VLRi0xMDEnLFxuICAgICAgICAgIHRpdGxlOiAnS2Vuc2luZ3RvbiBWZWx2ZXQgMy1TZWF0ZXIgQ2hlc3RlcmZpZWxkIFNvZmEnLFxuICAgICAgICAgIGNhdGVnb3J5OiAnU29mYXMgJiBDb3VjaGVzJyxcbiAgICAgICAgICBvcmlnaW5hbFByaWNlOiA4OTksXG4gICAgICAgICAgc2FsZVByaWNlOiA1OTksXG4gICAgICAgICAgY29sb3VyczogWydSb3lhbCBOYXZ5JywgJ0VtZXJhbGQgR3JlZW4nLCAnQ2hhcmNvYWwgR3JleScsICdDaGFtcGFnbmUgQ3JlYW0nLCAnTXVzdGFyZCBZZWxsb3cnXSxcbiAgICAgICAgICBpbWFnZXM6IFtcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU1NTA0MTQ2OS1hNTg2YzYxZWE5YmM/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDkzNjYzMjg0MDMxLWI3ZTNhZWZjYWU4ZT9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1ODYwMjM0OTIxMjUtMjdiMmMwNDVlZmQ3P2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4Mzg0NzI2ODk2NC1iMjhkYzhmNTFmOTI/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNjE2NDY0OTE2MzU2LTNhNzc3YjJiNjBiMT9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NjcwMTY0MzI3NzktMDk0MDY5OTU4ZWE1P2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0MDU3NDE2MzAyNi02NDNlYTIwYWRlMjU/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTEyMjEyNjIxMTQ5LTEwN2ZmZTU3MmQyZj9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MTgyMjAxNzk0MjgtMjI3OTBiNDYxMDEzP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4MjU4MjYyMTk1OS00OGQyNzM5N2RjNjk/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnXG4gICAgICAgICAgXSxcbiAgICAgICAgICBkZXNjcmlwdGlvbjogJ1RoZSBLZW5zaW5ndG9uIENoZXN0ZXJmaWVsZCAzLVNlYXRlciBTb2ZhIGNvbWJpbmVzIHRpbWVsZXNzIEJyaXRpc2ggY3JhZnRzbWFuc2hpcCB3aXRoIG1vZGVybiBkZWVwLWZvYW0gY29tZm9ydC4gRmVhdHVyZXMgaGFuZC10dWZ0ZWQgYnV0dG9uIGRldGFpbGluZywgZHVyYWJsZSBwcmVtaXVtIHZlbHZldCB1cGhvbHN0ZXJ5LCBzY3JvbGxlZCBhcm1zLCBhbmQgc29saWQgdHVybmVkIHdvb2RlbiBmZWV0LicsXG4gICAgICAgICAgZGltZW5zaW9uczogJ1c6IDIxNWNtIHwgRDogOTVjbSB8IEg6IDc4Y20nLFxuICAgICAgICAgIG1hdGVyaWFsOiAnUHJlbWl1bSBTdGFpbi1SZXNpc3RhbnQgVmVsdmV0ICYgU29saWQgQmlyY2ggRnJhbWUnLFxuICAgICAgICAgIGluU3RvY2s6IHRydWVcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgIGlkOiAncHJvZC0yJyxcbiAgICAgICAgICBjb2RlOiAnVUtGLTIwMScsXG4gICAgICAgICAgdGl0bGU6ICdXaW5kc29yIE90dG9tYW4gR2FzLUxpZnQgU3RvcmFnZSBCZWQgKEtpbmcgU2l6ZSknLFxuICAgICAgICAgIGNhdGVnb3J5OiAnQmVkcyAmIE1hdHRyZXNzZXMnLFxuICAgICAgICAgIG9yaWdpbmFsUHJpY2U6IDc0OSxcbiAgICAgICAgICBzYWxlUHJpY2U6IDQ3OSxcbiAgICAgICAgICBjb2xvdXJzOiBbJ1NsYXRlIEdyZXknLCAnT2F0bWVhbCBMaW5lbicsICdNaWRuaWdodCBCbHVlJywgJ1NpbHZlciBCaXJjaCddLFxuICAgICAgICAgIGltYWdlczogW1xuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTA1NjkzNDE2Mzg4LWFjNWNlMDY4ZmU4NT9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NDA1MTg2MTQ4NDYtN2VkZTQzM2M0ZWYwP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYxNjA0NjIyOTQ3OC05OTAxYzU1MzZhNDU/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTk4OTI4NTA2MzExLWM1NWRlZDkxYTIwYz9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MjI3NzE3Mzk4NDQtNmE5ZjZkNWYxNGFmP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU5NTUyNjExNDAzNS0wZDQ1ZWQxNmNmYmY/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTc4ODk4ODg3OTMyLWRjZTIzYTU5NWFkND9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MDU2OTE5Mzg4OTUtMTc1OGQ3ZmViNTExP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU2MDE4NTAwNy1jZGU0MzZmNmE0ZDA/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTA3NjUyMzEzNTE5LWQ0ZTkxNzQ5OTZkZD9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCdcbiAgICAgICAgICBdLFxuICAgICAgICAgIGRlc2NyaXB0aW9uOiAnTWF4aW1pemUgeW91ciBiZWRyb29tIHNwYWNlIHdpdGggdGhlIFdpbmRzb3IgT3R0b21hbiBCZWQuIEZlYXR1cmluZyBhbiBlYXN5IGh5ZHJhdWxpYyBnYXMtbGlmdCBtZWNoYW5pc20gdGhhdCBvcGVucyBlZmZvcnRsZXNzbHkgdG8gcmV2ZWFsIGZ1bGwgdW5kZXItYmVkIHN0b3JhZ2UuJyxcbiAgICAgICAgICBkaW1lbnNpb25zOiAnS2luZyAoNWZ0KTogVzogMTYyY20gfCBMOiAyMTVjbSB8IEhlYWRib2FyZCBIOiAxMjhjbScsXG4gICAgICAgICAgbWF0ZXJpYWw6ICdUZXh0dXJlZCBXZWF2ZSBMaW5lbiBGYWJyaWMgJiBSZWluZm9yY2VkIFN0ZWVsIEh5ZHJhdWxpYyBCYXNlJyxcbiAgICAgICAgICBpblN0b2NrOiB0cnVlXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICBpZDogJ3Byb2QtMycsXG4gICAgICAgICAgY29kZTogJ1VLRi0zMDEnLFxuICAgICAgICAgIHRpdGxlOiAnQ290c3dvbGQgU29saWQgTmF0dXJhbCBPYWsgNi1TZWF0ZXIgRGluaW5nIFRhYmxlJyxcbiAgICAgICAgICBjYXRlZ29yeTogJ0RpbmluZyBTZXRzJyxcbiAgICAgICAgICBvcmlnaW5hbFByaWNlOiA2OTksXG4gICAgICAgICAgc2FsZVByaWNlOiA0NDksXG4gICAgICAgICAgY29sb3VyczogWydOYXR1cmFsIE9haycsICdTbW9rZWQgV2FsbnV0JywgJ1dhc2hlZCBBc2gnLCAnUnVzdGljIERhcmsgT2FrJ10sXG4gICAgICAgICAgaW1hZ2VzOiBbXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MTUwNjYzOTA5NzEtMDNlNGUxYzM2ZGRmP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTUzMDAxODYwNzkxMi1lZmYyZGFhMWJhYzQ/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTc3MTQwOTE3MTcwLTI4NTkyOWZiNTViNz9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1OTcwNzI2ODkyMjctODg4MjI3M2U4ZjZhP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTYxNzgwNjExODIzMy0xOGUxZGUyNDcyMDA/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNjA0NTc4NzYyMjQ2LTQxMTM0ZTM3ZjljYz9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MzMwOTAxNjE3NjctZTZmZmVkOTg2Yzg4P2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0OTQ4ODM0NC0xZjliOGQyYmQxZjM/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTgzODQ3MjY4OTY0LWIyOGRjOGY1MWY5Mj9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NjcwMTYzNzY0MDgtMDIyNmU0ZDBjMWVhP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJ1xuICAgICAgICAgIF0sXG4gICAgICAgICAgZGVzY3JpcHRpb246ICdDcmFmdGVkIGZyb20gc3VzdGFpbmFibGUgRXVyb3BlYW4gd2hpdGUgb2FrLCB0aGUgQ290c3dvbGQgRGluaW5nIFRhYmxlIGZlYXR1cmVzIGEgcm9idXN0IDQwbW0gdGhpY2sgc29saWQgdG9wIHdpdGggY2hhbWZlcmVkIGVkZ2VzIGFuZCBzdHVyZHkgdGFwZXJlZCBsZWdzLicsXG4gICAgICAgICAgZGltZW5zaW9uczogJ0w6IDE4MGNtIHwgVzogOTBjbSB8IEg6IDc2Y20nLFxuICAgICAgICAgIG1hdGVyaWFsOiAnMTAwJSBTb2xpZCBFdXJvcGVhbiBPYWsnLFxuICAgICAgICAgIGluU3RvY2s6IHRydWVcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgIGlkOiAncHJvZC00JyxcbiAgICAgICAgICBjb2RlOiAnVUtGLTEwMicsXG4gICAgICAgICAgdGl0bGU6ICdDaGVsc2VhIE1vZGVybiBDb3JuZXIgUmV2ZXJzaWJsZSBDaGFpc2UgU29mYScsXG4gICAgICAgICAgY2F0ZWdvcnk6ICdTb2ZhcyAmIENvdWNoZXMnLFxuICAgICAgICAgIG9yaWdpbmFsUHJpY2U6IDk5OSxcbiAgICAgICAgICBzYWxlUHJpY2U6IDY0OSxcbiAgICAgICAgICBjb2xvdXJzOiBbJ0dyYXBoaXRlIEdyZXknLCAnU2FuZCBCZWlnZScsICdGb3Jlc3QgR3JlZW4nLCAnRGVuaW0gQmx1ZSddLFxuICAgICAgICAgIGltYWdlczogW1xuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTg0MTAwOTM2NTk1LWMwNjU0YjU1YTJlMj9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE0ODQxMDE0MDM2MzMtNTYyZjg5MWRjODlhP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU1NTA0MTQ2OS1hNTg2YzYxZWE5YmM/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTEyMjEyNjIxMTQ5LTEwN2ZmZTU3MmQyZj9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MTY0NjQ5MTYzNTYtM2E3NzdiMmI2MGIxP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4NjAyMzQ5MjEyNS0yN2IyYzA0NWVmZDc/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTgzODQ3MjY4OTY0LWIyOGRjOGY1MWY5Mj9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1NjcwMTY0MzI3NzktMDk0MDY5OTU4ZWE1P2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0MDU3NDE2MzAyNi02NDNlYTIwYWRlMjU/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDkzNjYzMjg0MDMxLWI3ZTNhZWZjYWU4ZT9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCdcbiAgICAgICAgICBdLFxuICAgICAgICAgIGRlc2NyaXB0aW9uOiAnRGVzaWduZWQgZm9yIG1vZGVybiBVSyBsaXZpbmcgcm9vbXMsIHRoZSBDaGVsc2VhIENvcm5lciBTb2ZhIGhhcyBhIG1vZHVsYXIgcmV2ZXJzaWJsZSBjaGFpc2Ugc2VjdGlvbiB0aGF0IGNhbiBiZSBwb3NpdGlvbmVkIG9uIGVpdGhlciB0aGUgbGVmdCBvciByaWdodCBzaWRlLicsXG4gICAgICAgICAgZGltZW5zaW9uczogJ1c6IDI0MGNtIHwgQ2hhaXNlIEQ6IDE1NWNtIHwgSDogODVjbScsXG4gICAgICAgICAgbWF0ZXJpYWw6ICdIYXJkd2VhcmluZyBDaGVuaWxsZSBCb3VjbMOpIFdlYXZlJyxcbiAgICAgICAgICBpblN0b2NrOiB0cnVlXG4gICAgICAgIH1cbiAgICAgIF07XG5cbiAgICAgIGNvbnN0IFNBTVBMRV9JTUFHRVMgPSBbXG4gICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU1NTA0MTQ2OS1hNTg2YzYxZWE5YmM/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE0OTM2NjMyODQwMzEtYjdlM2FlZmNhZThlP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTg2MDIzNDkyMTI1LTI3YjJjMDQ1ZWZkNz9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4Mzg0NzI2ODk2NC1iMjhkYzhmNTFmOTI/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE2MTY0NjQ5MTYzNTYtM2E3NzdiMmI2MGIxP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTY3MDE2NDMyNzc5LTA5NDA2OTk1OGVhNT9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0MDU3NDE2MzAyNi02NDNlYTIwYWRlMjU/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnLFxuICAgICAgICAnaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MTIyMTI2MjExNDktMTA3ZmZlNTcyZDJmP2F1dG89Zm9ybWF0JmZpdD1jcm9wJnc9MTAwMCZxPTgwJyxcbiAgICAgICAgJ2h0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNjE4MjIwMTc5NDI4LTIyNzkwYjQ2MTAxMz9hdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTEwMDAmcT04MCcsXG4gICAgICAgICdodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU4MjU4MjYyMTk1OS00OGQyNzM5N2RjNjk/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMDAwJnE9ODAnXG4gICAgICBdO1xuXG4gICAgICBmdW5jdGlvbiBBcHAoKSB7XG4gICAgICAgIGNvbnN0IFtwcm9kdWN0cywgc2V0UHJvZHVjdHNdID0gdXNlU3RhdGUoKCkgPT4ge1xuICAgICAgICAgIHRyeSB7XG4gICAgICAgICAgICBjb25zdCBzYXZlZCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd1a19mdXJuaXR1cmVfcHJvZHVjdHMnKTtcbiAgICAgICAgICAgIGlmIChzYXZlZCkgcmV0dXJuIEpTT04ucGFyc2Uoc2F2ZWQpO1xuICAgICAgICAgIH0gY2F0Y2gge31cbiAgICAgICAgICByZXR1cm4gSU5JVElBTF9QUk9EVUNUUztcbiAgICAgICAgfSk7XG5cbiAgICAgICAgY29uc3QgW2NhcnQsIHNldENhcnRdID0gdXNlU3RhdGUoKCkgPT4ge1xuICAgICAgICAgIHRyeSB7XG4gICAgICAgICAgICBjb25zdCBzYXZlZCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd1a19mdXJuaXR1cmVfY2FydCcpO1xuICAgICAgICAgICAgaWYgKHNhdmVkKSByZXR1cm4gSlNPTi5wYXJzZShzYXZlZCk7XG4gICAgICAgICAgfSBjYXRjaCB7fVxuICAgICAgICAgIHJldHVybiBbXTtcbiAgICAgICAgfSk7XG5cbiAgICAgICAgY29uc3QgW3NlYXJjaCwgc2V0U2VhcmNoXSA9IHVzZVN0YXRlKCcnKTtcbiAgICAgICAgY29uc3QgW2NhdGVnb3J5LCBzZXRDYXRlZ29yeV0gPSB1c2VTdGF0ZSgnQWxsIFByb2R1Y3RzJyk7XG4gICAgICAgIGNvbnN0IFtzZWxlY3RlZFByb2R1Y3QsIHNldFNlbGVjdGVkUHJvZHVjdF0gPSB1c2VTdGF0ZShudWxsKTtcbiAgICAgICAgY29uc3QgW2lzQ2FydE9wZW4sIHNldElzQ2FydE9wZW5dID0gdXNlU3RhdGUoZmFsc2UpO1xuICAgICAgICBjb25zdCBbaXNBZG1pbk9wZW4sIHNldElzQWRtaW5PcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgICAgICAgY29uc3QgW2VkaXRpbmdQcm9kdWN0LCBzZXRFZGl0aW5nUHJvZHVjdF0gPSB1c2VTdGF0ZShudWxsKTtcbiAgICAgICAgY29uc3QgW3RvYXN0LCBzZXRUb2FzdF0gPSB1c2VTdGF0ZShudWxsKTtcblxuICAgICAgICAvLyBDaGVja291dCBmb3JtIHN0YXRlXG4gICAgICAgIGNvbnN0IFtjdXN0b21lciwgc2V0Q3VzdG9tZXJdID0gdXNlU3RhdGUoeyBmdWxsTmFtZTogJycsIHBob25lOiAnJywgYWRkcmVzczogJycsIHBvc3Rjb2RlOiAnJyB9KTtcblxuICAgICAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCd1a19mdXJuaXR1cmVfcHJvZHVjdHMnLCBKU09OLnN0cmluZ2lmeShwcm9kdWN0cykpO1xuICAgICAgICB9LCBbcHJvZHVjdHNdKTtcblxuICAgICAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCd1a19mdXJuaXR1cmVfY2FydCcsIEpTT04uc3RyaW5naWZ5KGNhcnQpKTtcbiAgICAgICAgfSwgW2NhcnRdKTtcblxuICAgICAgICBjb25zdCBzaG93VG9hc3QgPSAobXNnKSA9PiB7XG4gICAgICAgICAgc2V0VG9hc3QobXNnKTtcbiAgICAgICAgICBzZXRUaW1lb3V0KCgpID0+IHNldFRvYXN0KG51bGwpLCAyNTAwKTtcbiAgICAgICAgfTtcblxuICAgICAgICBjb25zdCBoYW5kbGVBZGRUb0NhcnQgPSAocHJvZHVjdCwgY29sb3VyLCBxdHkgPSAxKSA9PiB7XG4gICAgICAgICAgc2V0Q2FydChwcmV2ID0+IHtcbiAgICAgICAgICAgIGNvbnN0IGluZGV4ID0gcHJldi5maW5kSW5kZXgoaXRlbSA9PiBpdGVtLnByb2R1Y3RJZCA9PT0gcHJvZHVjdC5pZCAmJiBpdGVtLmNvbG91ciA9PT0gY29sb3VyKTtcbiAgICAgICAgICAgIGlmIChpbmRleCA+IC0xKSB7XG4gICAgICAgICAgICAgIGNvbnN0IHVwZGF0ZWQgPSBbLi4ucHJldl07XG4gICAgICAgICAgICAgIHVwZGF0ZWRbaW5kZXhdLnF0eSArPSBxdHk7XG4gICAgICAgICAgICAgIHJldHVybiB1cGRhdGVkO1xuICAgICAgICAgICAgfVxuICAgICAgICAgICAgcmV0dXJuIFsuLi5wcmV2LCB7XG4gICAgICAgICAgICAgIGlkOiBgJHtwcm9kdWN0LmlkfS0ke2NvbG91cn0tJHtEYXRlLm5vdygpfWAsXG4gICAgICAgICAgICAgIHByb2R1Y3RJZDogcHJvZHVjdC5pZCxcbiAgICAgICAgICAgICAgY29kZTogcHJvZHVjdC5jb2RlLFxuICAgICAgICAgICAgICB0aXRsZTogcHJvZHVjdC50aXRsZSxcbiAgICAgICAgICAgICAgaW1hZ2U6IHByb2R1Y3QuaW1hZ2VzWzBdLFxuICAgICAgICAgICAgICBjb2xvdXIsXG4gICAgICAgICAgICAgIHNhbGVQcmljZTogcHJvZHVjdC5zYWxlUHJpY2UsXG4gICAgICAgICAgICAgIHF0eVxuICAgICAgICAgICAgfV07XG4gICAgICAgICAgfSk7XG4gICAgICAgICAgc2hvd1RvYXN0KGBBZGRlZCBcIiR7cHJvZHVjdC50aXRsZX1cIiB0byBjYXJ0YCk7XG4gICAgICAgIH07XG5cbiAgICAgICAgY29uc3QgZmlsdGVyZWRQcm9kdWN0cyA9IHVzZU1lbW8oKCkgPT4ge1xuICAgICAgICAgIHJldHVybiBwcm9kdWN0cy5maWx0ZXIocCA9PiB7XG4gICAgICAgICAgICBjb25zdCBtYXRjaENhdCA9IGNhdGVnb3J5ID09PSAnQWxsIFByb2R1Y3RzJyB8fCBwLmNhdGVnb3J5ID09PSBjYXRlZ29yeTtcbiAgICAgICAgICAgIGNvbnN0IHEgPSBzZWFyY2gudG9Mb3dlckNhc2UoKS50cmltKCk7XG4gICAgICAgICAgICBpZiAoIXEpIHJldHVybiBtYXRjaENhdDtcbiAgICAgICAgICAgIGNvbnN0IG1hdGNoU2VhcmNoID0gcC50aXRsZS50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKHEpIHx8IHAuY29kZS50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKHEpIHx8IHAuY2F0ZWdvcnkudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhxKSB8fCBwLmNvbG91cnMuc29tZShjID0+IGMudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhxKSk7XG4gICAgICAgICAgICByZXR1cm4gbWF0Y2hDYXQgJiYgbWF0Y2hTZWFyY2g7XG4gICAgICAgICAgfSk7XG4gICAgICAgIH0sIFtwcm9kdWN0cywgY2F0ZWdvcnksIHNlYXJjaF0pO1xuXG4gICAgICAgIGNvbnN0IHRvdGFsQ2FydENvdW50ID0gY2FydC5yZWR1Y2UoKGFjYywgaXRlbSkgPT4gYWNjICsgaXRlbS5xdHksIDApO1xuICAgICAgICBjb25zdCB0b3RhbEFtb3VudCA9IGNhcnQucmVkdWNlKChhY2MsIGl0ZW0pID0+IGFjYyArIGl0ZW0uc2FsZVByaWNlICogaXRlbS5xdHksIDApO1xuXG4gICAgICAgIGNvbnN0IGhhbmRsZVBsYWNlT3JkZXIgPSAoZSkgPT4ge1xuICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcbiAgICAgICAgICBpZiAoY2FydC5sZW5ndGggPT09IDApIHJldHVybjtcblxuICAgICAgICAgIGNvbnN0IGN1c3RvbWVyQmxvY2sgPSBgTkVXIE9SREVSXFxuXFxuQ3VzdG9tZXIgTmFtZTogJHtjdXN0b21lci5mdWxsTmFtZX1cXG5DdXN0b21lciBQaG9uZTogJHtjdXN0b21lci5waG9uZX1cXG5EZWxpdmVyeSBBZGRyZXNzOiAke2N1c3RvbWVyLmFkZHJlc3N9XFxuUG9zdGNvZGU6ICR7Y3VzdG9tZXIucG9zdGNvZGUudG9VcHBlckNhc2UoKX1cXG5gO1xuICAgICAgICAgIGNvbnN0IHByb2R1Y3RCbG9ja3MgPSBjYXJ0Lm1hcChpdGVtID0+IGBQcm9kdWN0OiAke2l0ZW0udGl0bGV9XFxuUHJvZHVjdCBDb2RlOiAke2l0ZW0uY29kZX1cXG5Db2xvdXI6ICR7aXRlbS5jb2xvdXJ9XFxuUXVhbnRpdHk6ICR7aXRlbS5xdHl9XFxuUHJpY2U6IMKjJHsoaXRlbS5zYWxlUHJpY2UgKiBpdGVtLnF0eSkudG9Mb2NhbGVTdHJpbmcoJ2VuLUdCJyl9YCkuam9pbignXFxuXFxuJyk7XG4gICAgICAgICAgY29uc3QgdG90YWxCbG9jayA9IGBcXG5cXG5Ub3RhbDogwqMke3RvdGFsQW1vdW50LnRvTG9jYWxlU3RyaW5nKCdlbi1HQicpfVxcblxcbk9yZGVyIHJlcXVlc3Qgd2lsbCBiZSBjb25maXJtZWQgdGhyb3VnaCBXaGF0c0FwcC5gO1xuXG4gICAgICAgICAgY29uc3QgbXNnID0gYCR7Y3VzdG9tZXJCbG9ja31cXG4ke3Byb2R1Y3RCbG9ja3N9JHt0b3RhbEJsb2NrfWA7XG4gICAgICAgICAgY29uc3QgdXJsID0gYGh0dHBzOi8vd2EubWUvJHtXSEFUU0FQUF9SQVd9P3RleHQ9JHtlbmNvZGVVUklDb21wb25lbnQobXNnKX1gO1xuICAgICAgICAgIHdpbmRvdy5vcGVuKHVybCwgJ19ibGFuaycpO1xuICAgICAgICB9O1xuXG4gICAgICAgIHJldHVybiAoXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtaW4taC1zY3JlZW4gZmxleCBmbGV4LWNvbCBiZy1uZXV0cmFsLTEwMFwiPlxuICAgICAgICAgICAgey8qIEhlYWRlciAqL31cbiAgICAgICAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPVwic3RpY2t5IHRvcC0wIHotNDAgYmctd2hpdGUgYm9yZGVyLWIgYm9yZGVyLW5ldXRyYWwtMjAwIHNoYWRvdy14c1wiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LTd4bCBteC1hdXRvIHB4LTQgc206cHgtNiBsZzpweC04IGgtMTYgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0zXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMlwiPlxuICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cIiNcIiBjbGFzc05hbWU9XCJmb250LWJvbGQgdGV4dC14bCBzbTp0ZXh0LTJ4bCB0cmFja2luZy10aWdodCB0ZXh0LW5ldXRyYWwtOTAwXCI+XG4gICAgICAgICAgICAgICAgICAgIFVLIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtbmV1dHJhbC03MDAgZm9udC1zZW1pYm9sZFwiPkZ1cm5pdHVyZTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImhpZGRlbiBtZDppbmxpbmUtYmxvY2sgcHgtMiBweS0wLjUgcm91bmRlZCB0ZXh0LXhzIGZvbnQtbWVkaXVtIGJnLW5ldXRyYWwtMTAwIHRleHQtbmV1dHJhbC02MDAgYm9yZGVyXCI+XG4gICAgICAgICAgICAgICAgICAgIERpcmVjdCBVSyBDYXRhbG9ndWVcbiAgICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIHNtOmZsZXggZmxleC0xIG1heC13LW1kIG14LTRcIj5cbiAgICAgICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiXG4gICAgICAgICAgICAgICAgICAgIHZhbHVlPXtzZWFyY2h9XG4gICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0U2VhcmNoKGUudGFyZ2V0LnZhbHVlKX1cbiAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJTZWFyY2ggc29mYXMsIGJlZHMsIGRpbmluZywgcHJvZHVjdCBjb2RlLi4uXCJcbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHB4LTQgcHktMiB0ZXh0LXNtIGJnLW5ldXRyYWwtNTAgYm9yZGVyIGJvcmRlci1uZXV0cmFsLTMwMCByb3VuZGVkLW1kIGZvY3VzOmJnLXdoaXRlIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItbmV1dHJhbC05MDBcIlxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgc206Z2FwLTNcIj5cbiAgICAgICAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgICAgICAgIGhyZWY9e2BodHRwczovL3dhLm1lLyR7V0hBVFNBUFBfUkFXfT90ZXh0PWAgKyBlbmNvZGVVUklDb21wb25lbnQoJ0hlbGxvIFVLIEZ1cm5pdHVyZSwgSSBoYXZlIGFuIGlucXVpcnkuJyApfVxuICAgICAgICAgICAgICAgICAgICB0YXJnZXQ9XCJfYmxhbmtcIlxuICAgICAgICAgICAgICAgICAgICByZWw9XCJub29wZW5lciBub3JlZmVycmVyXCJcbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUgcHgtMyBweS0xLjUgYmctZW1lcmFsZC02MDAgaG92ZXI6YmctZW1lcmFsZC03MDAgdGV4dC13aGl0ZSByb3VuZGVkLW1kIHRleHQteHMgc206dGV4dC1zbSBmb250LW1lZGl1bVwiXG4gICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIDxzcGFuPldoYXRzQXBwPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJmb250LW1vbm8gdGV4dC14cyBoaWRkZW4gbGc6aW5saW5lXCI+e1dIQVRTQVBQX05VTUJFUn08L3NwYW4+XG4gICAgICAgICAgICAgICAgICA8L2E+XG5cbiAgICAgICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4ge1xuICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IGh0bWxDb250ZW50ID0gJzwhZG9jdHlwZSBodG1sPlxcbicgKyBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQub3V0ZXJIVE1MO1xuICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IGJsb2IgPSBuZXcgQmxvYihbaHRtbENvbnRlbnRdLCB7IHR5cGU6ICd0ZXh0L2h0bWwnIH0pO1xuICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IHVybCA9IFVSTC5jcmVhdGVPYmplY3RVUkwoYmxvYik7XG4gICAgICAgICAgICAgICAgICAgICAgY29uc3QgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2EnKTtcbiAgICAgICAgICAgICAgICAgICAgICBhLmhyZWYgPSB1cmw7XG4gICAgICAgICAgICAgICAgICAgICAgYS5kb3dubG9hZCA9ICdpbmRleC5odG1sJztcbiAgICAgICAgICAgICAgICAgICAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGEpO1xuICAgICAgICAgICAgICAgICAgICAgIGEuY2xpY2soKTtcbiAgICAgICAgICAgICAgICAgICAgICBkb2N1bWVudC5ib2R5LnJlbW92ZUNoaWxkKGEpO1xuICAgICAgICAgICAgICAgICAgICAgIFVSTC5yZXZva2VPYmplY3RVUkwodXJsKTtcbiAgICAgICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicHgtMi41IHB5LTEuNSBiZy1uZXV0cmFsLTkwMCBob3ZlcjpiZy1uZXV0cmFsLTgwMCB0ZXh0LXdoaXRlIHJvdW5kZWQtbWQgdGV4dC14cyBzbTp0ZXh0LXNtIGZvbnQtbWVkaXVtIGZsZXggaXRlbXMtY2VudGVyIGdhcC0xIHNoYWRvdy14c1wiXG4gICAgICAgICAgICAgICAgICAgIHRpdGxlPVwiRG93bmxvYWQgY29tcGxldGUgd2Vic2l0ZSBhcyBhIHNpbmdsZSBpbmRleC5odG1sIGZpbGVcIlxuICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICA8c3ZnIGNsYXNzTmFtZT1cInctNCBoLTRcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHZpZXdCb3g9XCIwIDAgMjQgMjRcIj48cGF0aCBzdHJva2VMaW5lY2FwPVwicm91bmRcIiBzdHJva2VMaW5lam9pbj1cInJvdW5kXCIgc3Ryb2tlV2lkdGg9XCIyXCIgZD1cIk00IDE2djFhMyAzIDAgMDAzIDNoMTBhMyAzIDAgMDAzLTN2LTFtLTQtNGwtNCA0bTAgMGwtNC00bTQgNFY0XCIvPjwvc3ZnPlxuICAgICAgICAgICAgICAgICAgICA8c3Bhbj5Eb3dubG9hZCBmaWxlPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG5cbiAgICAgICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4geyBzZXRFZGl0aW5nUHJvZHVjdChudWxsKTsgc2V0SXNBZG1pbk9wZW4odHJ1ZSk7IH19XG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInB4LTIuNSBweS0xLjUgYmctbmV1dHJhbC0xMDAgaG92ZXI6YmctbmV1dHJhbC0yMDAgdGV4dC1uZXV0cmFsLTcwMCByb3VuZGVkLW1kIHRleHQteHMgc206dGV4dC1zbSBmb250LW1lZGl1bSBib3JkZXIgYm9yZGVyLW5ldXRyYWwtMzAwXCJcbiAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgQWRtaW4gLyBBZGRcbiAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuXG4gICAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldElzQ2FydE9wZW4odHJ1ZSl9XG4gICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInJlbGF0aXZlIGlubGluZS1mbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBwLTIgYmctbmV1dHJhbC05MDAgaG92ZXI6YmctbmV1dHJhbC04MDAgdGV4dC13aGl0ZSByb3VuZGVkLW1kXCJcbiAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgPHN2ZyBjbGFzc05hbWU9XCJ3LTUgaC01XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiB2aWV3Qm94PVwiMCAwIDI0IDI0XCI+PHBhdGggc3Ryb2tlTGluZWNhcD1cInJvdW5kXCIgc3Ryb2tlTGluZWpvaW49XCJyb3VuZFwiIHN0cm9rZVdpZHRoPVwiMlwiIGQ9XCJNMTYgMTFWN2E0IDQgMCAwMC04IDB2NE01IDloMTRsMSAxMkg0TDUgOXpcIi8+PC9zdmc+XG4gICAgICAgICAgICAgICAgICAgIHt0b3RhbENhcnRDb3VudCA+IDAgJiYgKFxuICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImFic29sdXRlIC10b3AtMS41IC1yaWdodC0xLjUgYmctZW1lcmFsZC01MDAgdGV4dC13aGl0ZSB0ZXh0LXhzIGZvbnQtYm9sZCByb3VuZGVkLWZ1bGwgaC01IHctNSBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBib3JkZXItMiBib3JkZXItd2hpdGVcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIHt0b3RhbENhcnRDb3VudH1cbiAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICl9XG4gICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgey8qIENhdGVnb3JpZXMgKi99XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWF4LXctN3hsIG14LWF1dG8gcHgtNCBzbTpweC02IGxnOnB4LTggcGItMi41IGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIG92ZXJmbG93LXgtYXV0byBzY3JvbGxiYXItbm9uZSBib3JkZXItdCBib3JkZXItbmV1dHJhbC0xMDAgcHQtMlwiPlxuICAgICAgICAgICAgICAgIHtDQVRFR09SSUVTLm1hcChjYXQgPT4gKFxuICAgICAgICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICAgICAgICBrZXk9e2NhdH1cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q2F0ZWdvcnkoY2F0KX1cbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgd2hpdGVzcGFjZS1ub3dyYXAgcHgtMyBweS0xIHJvdW5kZWQtZnVsbCB0ZXh0LXhzIHNtOnRleHQtc20gZm9udC1tZWRpdW0gdHJhbnNpdGlvbi1jb2xvcnMgJHtjYXRlZ29yeSA9PT0gY2F0ID8gJ2JnLW5ldXRyYWwtOTAwIHRleHQtd2hpdGUnIDogJ2JnLW5ldXRyYWwtMTAwIHRleHQtbmV1dHJhbC03MDAgaG92ZXI6YmctbmV1dHJhbC0yMDAnfWB9XG4gICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgIHtjYXR9XG4gICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2hlYWRlcj5cblxuICAgICAgICAgICAgey8qIE1haW4gUHJvZHVjdHMgR3JpZCAqL31cbiAgICAgICAgICAgIDxtYWluIGNsYXNzTmFtZT1cImZsZXgtMSBtYXgtdy03eGwgdy1mdWxsIG14LWF1dG8gcHgtNCBzbTpweC02IGxnOnB4LTggcHktNlwiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBtYi00IHBiLTIgYm9yZGVyLWJcIj5cbiAgICAgICAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC1iYXNlIHNtOnRleHQtbGcgZm9udC1ib2xkXCI+e2NhdGVnb3J5ID09PSAnQWxsIFByb2R1Y3RzJyA/ICdBbGwgRnVybml0dXJlIExpc3RpbmdzJyA6IGNhdGVnb3J5fTwvaDE+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC14cyB0ZXh0LW5ldXRyYWwtNTAwIGZvbnQtbW9ub1wiPih7ZmlsdGVyZWRQcm9kdWN0cy5sZW5ndGh9IGl0ZW1zKTwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAge2ZpbHRlcmVkUHJvZHVjdHMubGVuZ3RoID09PSAwID8gKFxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXIgcHktMTYgYmctd2hpdGUgcm91bmRlZC1sZyBib3JkZXIgcC04XCI+XG4gICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LWJvbGQgbWItMVwiPk5vIHByb2R1Y3RzIGZvdW5kPC9oMz5cbiAgICAgICAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4geyBzZXRTZWFyY2goJycpOyBzZXRDYXRlZ29yeSgnQWxsIFByb2R1Y3RzJyk7IH19IGNsYXNzTmFtZT1cIm10LTIgcHgtNCBweS0yIGJnLW5ldXRyYWwtOTAwIHRleHQtd2hpdGUgcm91bmRlZCB0ZXh0LXhzXCI+UmVzZXQgRmlsdGVyczwvYnV0dG9uPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICApIDogKFxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMSBzbTpncmlkLWNvbHMtMiBtZDpncmlkLWNvbHMtMyBsZzpncmlkLWNvbHMtNCBnYXAtNFwiPlxuICAgICAgICAgICAgICAgICAge2ZpbHRlcmVkUHJvZHVjdHMubWFwKHByb2R1Y3QgPT4ge1xuICAgICAgICAgICAgICAgICAgICBjb25zdCBbY29sb3VyLCBzZXRDb2xvdXJdID0gdXNlU3RhdGUocHJvZHVjdC5jb2xvdXJzWzBdIHx8ICdEZWZhdWx0Jyk7XG4gICAgICAgICAgICAgICAgICAgIGNvbnN0IFthZGRlZCwgc2V0QWRkZWRdID0gdXNlU3RhdGUoZmFsc2UpO1xuICAgICAgICAgICAgICAgICAgICBjb25zdCBkaXNjb3VudCA9IE1hdGgucm91bmQoKChwcm9kdWN0Lm9yaWdpbmFsUHJpY2UgLSBwcm9kdWN0LnNhbGVQcmljZSkgLyBwcm9kdWN0Lm9yaWdpbmFsUHJpY2UpICogMTAwKTtcblxuICAgICAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICAgICAgICAgIGtleT17cHJvZHVjdC5pZH1cbiAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldFNlbGVjdGVkUHJvZHVjdChwcm9kdWN0KX1cbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImdyb3VwIGJnLXdoaXRlIHJvdW5kZWQtbGcgYm9yZGVyIGJvcmRlci1uZXV0cmFsLTIwMCBvdmVyZmxvdy1oaWRkZW4gaG92ZXI6Ym9yZGVyLW5ldXRyYWwtNDAwIGhvdmVyOnNoYWRvdy1tZCB0cmFuc2l0aW9uLWFsbCBmbGV4IGZsZXgtY29sIGN1cnNvci1wb2ludGVyXCJcbiAgICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJlbGF0aXZlIGFzcGVjdC00LzMgdy1mdWxsIGJnLW5ldXRyYWwtMTAwIG92ZXJmbG93LWhpZGRlblwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz17cHJvZHVjdC5pbWFnZXNbMF19IGFsdD17cHJvZHVjdC50aXRsZX0gcmVmZXJyZXJQb2xpY3k9XCJuby1yZWZlcnJlclwiIGNsYXNzTmFtZT1cInctZnVsbCBoLWZ1bGwgb2JqZWN0LWNvdmVyIGdyb3VwLWhvdmVyOnNjYWxlLTEwNSB0cmFuc2l0aW9uLXRyYW5zZm9ybSBkdXJhdGlvbi0zMDBcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIHRvcC0yLjUgbGVmdC0yLjVcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJweC0yIHB5LTAuNSBiZy1uZXV0cmFsLTkwMCB0ZXh0LXdoaXRlIGZvbnQtbW9ubyBmb250LW1lZGl1bSB0ZXh0LXhzIHJvdW5kZWRcIj57cHJvZHVjdC5jb2RlfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIHtkaXNjb3VudCA+IDAgJiYgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgdG9wLTIuNSByaWdodC0yLjVcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInB4LTIgcHktMC41IGJnLXJvc2UtNjAwIHRleHQtd2hpdGUgZm9udC1zZW1pYm9sZCB0ZXh0LXhzIHJvdW5kZWRcIj5TQVZFIHtkaXNjb3VudH0lPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicC00IGZsZXgtMSBmbGV4IGZsZXgtY29sIGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgdGV4dC1uZXV0cmFsLTUwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIgbWItMVwiPntwcm9kdWN0LmNhdGVnb3J5fTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZCB0ZXh0LW5ldXRyYWwtOTAwIHRleHQtc20gc206dGV4dC1iYXNlIGxpbmUtY2xhbXAtMiBtYi0yXCI+e3Byb2R1Y3QudGl0bGV9PC9oMz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggaXRlbXMtYmFzZWxpbmUgZ2FwLTIgbWItM1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LWJvbGQgZm9udC1tb25vXCI+wqN7cHJvZHVjdC5zYWxlUHJpY2UudG9Mb2NhbGVTdHJpbmcoJ2VuLUdCJyl9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Byb2R1Y3Qub3JpZ2luYWxQcmljZSA+IHByb2R1Y3Quc2FsZVByaWNlICYmIChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC14cyB0ZXh0LW5ldXRyYWwtNDAwIGxpbmUtdGhyb3VnaCBmb250LW1vbm9cIj7Co3twcm9kdWN0Lm9yaWdpbmFsUHJpY2UudG9Mb2NhbGVTdHJpbmcoJ2VuLUdCJyl9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTNcIiBvbkNsaWNrPXtlID0+IGUuc3RvcFByb3BhZ2F0aW9uKCl9PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtd3JhcCBnYXAtMVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7cHJvZHVjdC5jb2xvdXJzLnNsaWNlKDAsIDMpLm1hcChjID0+IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBrZXk9e2N9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRDb2xvdXIoYyl9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2B0ZXh0LVsxMXB4XSBweC0xLjUgcHktMC41IHJvdW5kZWQgYm9yZGVyICR7Y29sb3VyID09PSBjID8gJ2JnLW5ldXRyYWwtOTAwIHRleHQtd2hpdGUgYm9yZGVyLW5ldXRyYWwtOTAwJyA6ICdiZy1uZXV0cmFsLTUwIHRleHQtbmV1dHJhbC03MDAgYm9yZGVyLW5ldXRyYWwtMjAwJ31gfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtjfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KGUpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGUuc3RvcFByb3BhZ2F0aW9uKCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBoYW5kbGVBZGRUb0NhcnQocHJvZHVjdCwgY29sb3VyKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNldEFkZGVkKHRydWUpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2V0VGltZW91dCgoKSA9PiBzZXRBZGRlZChmYWxzZSksIDE1MDApO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdy1mdWxsIHB5LTIgcm91bmRlZCB0ZXh0LXhzIHNtOnRleHQtc20gZm9udC1zZW1pYm9sZCB0cmFuc2l0aW9uLWNvbG9ycyAke2FkZGVkID8gJ2JnLWVtZXJhbGQtNjAwIHRleHQtd2hpdGUnIDogJ2JnLW5ldXRyYWwtOTAwIGhvdmVyOmJnLW5ldXRyYWwtODAwIHRleHQtd2hpdGUnfWB9XG4gICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7YWRkZWQgPyAnQWRkZWQgdG8gQ2FydCEnIDogJ0FkZCB0byBDYXJ0J31cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgKTtcbiAgICAgICAgICAgICAgICAgIH0pfVxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgPC9tYWluPlxuXG4gICAgICAgICAgICB7LyogUHJvZHVjdCBEZXRhaWwgTW9kYWwgKi99XG4gICAgICAgICAgICB7c2VsZWN0ZWRQcm9kdWN0ICYmIChcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaXhlZCBpbnNldC0wIHotNTAgYmctYmxhY2svNjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcC0zIHNtOnAtNlwiIG9uQ2xpY2s9eygpID0+IHNldFNlbGVjdGVkUHJvZHVjdChudWxsKX0+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy13aGl0ZSB3LWZ1bGwgbWF4LXctNHhsIHJvdW5kZWQteGwgc2hhZG93LTJ4bCBvdmVyZmxvdy1oaWRkZW4gbWF4LWgtWzkydmhdIGZsZXggZmxleC1jb2xcIiBvbkNsaWNrPXtlID0+IGUuc3RvcFByb3BhZ2F0aW9uKCl9PlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJweC00IHB5LTMgYm9yZGVyLWIgYmctbmV1dHJhbC01MCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiZm9udC1tb25vIHRleHQteHMgZm9udC1zZW1pYm9sZCBweC0yIHB5LTAuNSBiZy1uZXV0cmFsLTkwMCB0ZXh0LXdoaXRlIHJvdW5kZWRcIj57c2VsZWN0ZWRQcm9kdWN0LmNvZGV9PC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldFNlbGVjdGVkUHJvZHVjdChudWxsKX0gY2xhc3NOYW1lPVwidGV4dC1uZXV0cmFsLTUwMCBob3Zlcjp0ZXh0LW5ldXRyYWwtOTAwIGZvbnQtYm9sZCBweC0yXCI+4pyVPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwLTQgc206cC02IG92ZXJmbG93LXktYXV0byBncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGdhcC02XCI+XG4gICAgICAgICAgICAgICAgICAgIHsvKiBHYWxsZXJ5ICovfVxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktM1wiPlxuICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYXNwZWN0LTQvMyBiZy1uZXV0cmFsLTEwMCByb3VuZGVkLWxnIG92ZXJmbG93LWhpZGRlbiBib3JkZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPXtzZWxlY3RlZFByb2R1Y3QuaW1hZ2VzWzBdfSBhbHQ9XCJcIiByZWZlcnJlclBvbGljeT1cIm5vLXJlZmVycmVyXCIgY2xhc3NOYW1lPVwidy1mdWxsIGgtZnVsbCBvYmplY3QtY292ZXJcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBnYXAtMiBvdmVyZmxvdy14LWF1dG8gcGItMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAge3NlbGVjdGVkUHJvZHVjdC5pbWFnZXMubWFwKChpbWcsIGkpID0+IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBrZXk9e2l9IHNyYz17aW1nfSBhbHQ9XCJcIiByZWZlcnJlclBvbGljeT1cIm5vLXJlZmVycmVyXCIgY2xhc3NOYW1lPVwidy0xNiBoLTE0IG9iamVjdC1jb3ZlciByb3VuZGVkIGJvcmRlciBzaHJpbmstMFwiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgey8qIERldGFpbHMgKi99XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBmbGV4LWNvbCBqdXN0aWZ5LWJldHdlZW4gc3BhY2UteS00XCI+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LXhsIHNtOnRleHQtMnhsIGZvbnQtYm9sZCBtYi0yXCI+e3NlbGVjdGVkUHJvZHVjdC50aXRsZX08L2gyPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC0yeGwgZm9udC1leHRyYWJvbGQgZm9udC1tb25vIG1iLTRcIj7Co3tzZWxlY3RlZFByb2R1Y3Quc2FsZVByaWNlLnRvTG9jYWxlU3RyaW5nKCdlbi1HQicpfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteHMgc206dGV4dC1zbSB0ZXh0LW5ldXRyYWwtNjAwIG1iLTRcIj57c2VsZWN0ZWRQcm9kdWN0LmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgIHtzZWxlY3RlZFByb2R1Y3QuZGltZW5zaW9ucyAmJiA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtbW9ubyBtYi0yXCI+RGltZW5zaW9uczoge3NlbGVjdGVkUHJvZHVjdC5kaW1lbnNpb25zfTwvcD59XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktM1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgaGFuZGxlQWRkVG9DYXJ0KHNlbGVjdGVkUHJvZHVjdCwgc2VsZWN0ZWRQcm9kdWN0LmNvbG91cnNbMF0pO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNldFNlbGVjdGVkUHJvZHVjdChudWxsKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHB5LTMgYmctbmV1dHJhbC05MDAgdGV4dC13aGl0ZSBmb250LWJvbGQgcm91bmRlZCB0ZXh0LXNtXCJcbiAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgQWRkIHRvIENhcnRcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGFcbiAgICAgICAgICAgICAgICAgICAgICAgICAgaHJlZj17YGh0dHBzOi8vd2EubWUvJHtXSEFUU0FQUF9SQVd9P3RleHQ9YCArIGVuY29kZVVSSUNvbXBvbmVudChgSGVsbG8gVUsgRnVybml0dXJlLCBJIHdhbnQgdG8gb3JkZXIgcHJvZHVjdCAke3NlbGVjdGVkUHJvZHVjdC50aXRsZX0gKCR7c2VsZWN0ZWRQcm9kdWN0LmNvZGV9KS5gKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0PVwiX2JsYW5rXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgcmVsPVwibm9vcGVuZXIgbm9yZWZlcnJlclwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInctZnVsbCBweS0yLjUgYmctZW1lcmFsZC02MDAgdGV4dC13aGl0ZSBmb250LW1lZGl1bSByb3VuZGVkIHRleHQtc20gdGV4dC1jZW50ZXIgYmxvY2tcIlxuICAgICAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgICAgICBJbnF1aXJlIG9uIFdoYXRzQXBwICh7V0hBVFNBUFBfTlVNQkVSfSlcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApfVxuXG4gICAgICAgICAgICB7LyogQ2FydCAmIENoZWNrb3V0IERyYXdlciAqL31cbiAgICAgICAgICAgIHtpc0NhcnRPcGVuICYmIChcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaXhlZCBpbnNldC0wIHotNTAgYmctYmxhY2svNjAgZmxleCBqdXN0aWZ5LWVuZFwiIG9uQ2xpY2s9eygpID0+IHNldElzQ2FydE9wZW4oZmFsc2UpfT5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInctZnVsbCBtYXgtdy1sZyBiZy13aGl0ZSBoLWZ1bGwgc2hhZG93LTJ4bCBmbGV4IGZsZXgtY29sIGp1c3RpZnktYmV0d2VlblwiIG9uQ2xpY2s9e2UgPT4gZS5zdG9wUHJvcGFnYXRpb24oKX0+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInB4LTUgcHktNCBib3JkZXItYiBiZy1uZXV0cmFsLTUwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwiZm9udC1ib2xkIHRleHQtbGdcIj5Zb3VyIENhcnQgKHt0b3RhbENhcnRDb3VudH0pPC9oMj5cbiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBzZXRJc0NhcnRPcGVuKGZhbHNlKX0gY2xhc3NOYW1lPVwidGV4dC1uZXV0cmFsLTUwMCBmb250LWJvbGQgcHgtMlwiPuKclTwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleC0xIG92ZXJmbG93LXktYXV0byBwLTUgc3BhY2UteS00XCI+XG4gICAgICAgICAgICAgICAgICAgIHtjYXJ0Lmxlbmd0aCA9PT0gMCA/IChcbiAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlciB0ZXh0LW5ldXRyYWwtNTAwIHB5LTEyXCI+WW91ciBjYXJ0IGlzIGVtcHR5LjwvcD5cbiAgICAgICAgICAgICAgICAgICAgKSA6IChcbiAgICAgICAgICAgICAgICAgICAgICA8PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTNcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAge2NhcnQubWFwKGl0ZW0gPT4gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYga2V5PXtpdGVtLmlkfSBjbGFzc05hbWU9XCJmbGV4IGdhcC0zIHAtMyBiZy1uZXV0cmFsLTUwIHJvdW5kZWQgYm9yZGVyIGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e2l0ZW0uaW1hZ2V9IGFsdD1cIlwiIHJlZmVycmVyUG9saWN5PVwibm8tcmVmZXJyZXJcIiBjbGFzc05hbWU9XCJ3LTE0IGgtMTQgb2JqZWN0LWNvdmVyIHJvdW5kZWRcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4LTEgbWluLXctMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDQgY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZCB0ZXh0LXhzIHNtOnRleHQtc20gdHJ1bmNhdGVcIj57aXRlbS50aXRsZX08L2g0PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LVsxMXB4XSBmb250LW1vbm8gdGV4dC1uZXV0cmFsLTUwMFwiPkNvZGU6IHtpdGVtLmNvZGV9IHwgQ29sb3VyOiB7aXRlbS5jb2xvdXJ9PC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtYm9sZCBtdC0xXCI+UXR5OiB7aXRlbS5xdHl9IMOXIMKje2l0ZW0uc2FsZVByaWNlfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBzZXRDYXJ0KGNhcnQuZmlsdGVyKGkgPT4gaS5pZCAhPT0gaXRlbS5pZCkpfSBjbGFzc05hbWU9XCJ0ZXh0LXJvc2UtNjAwIHRleHQteHMgcHgtMlwiPlJlbW92ZTwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInAtMyBiZy1uZXV0cmFsLTEwMCByb3VuZGVkIGZvbnQtYm9sZCBmbGV4IGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5Ub3RhbDo8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZvbnQtbW9ub1wiPsKje3RvdGFsQW1vdW50LnRvTG9jYWxlU3RyaW5nKCdlbi1HQicpfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17aGFuZGxlUGxhY2VPcmRlcn0gY2xhc3NOYW1lPVwic3BhY2UteS0zIHB0LTMgYm9yZGVyLXRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtYm9sZCB0ZXh0LXNtXCI+RGVsaXZlcnkgRGV0YWlsczwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIHJlcXVpcmVkIHBsYWNlaG9sZGVyPVwiRnVsbCBOYW1lICpcIiB2YWx1ZT17Y3VzdG9tZXIuZnVsbE5hbWV9IG9uQ2hhbmdlPXtlID0+IHNldEN1c3RvbWVyKHsuLi5jdXN0b21lciwgZnVsbE5hbWU6IGUudGFyZ2V0LnZhbHVlfSl9IGNsYXNzTmFtZT1cInctZnVsbCBwLTIgdGV4dC1zbSBib3JkZXIgcm91bmRlZFwiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGVsXCIgcmVxdWlyZWQgcGxhY2Vob2xkZXI9XCJQaG9uZSBOdW1iZXIgKlwiIHZhbHVlPXtjdXN0b21lci5waG9uZX0gb25DaGFuZ2U9e2UgPT4gc2V0Q3VzdG9tZXIoey4uLmN1c3RvbWVyLCBwaG9uZTogZS50YXJnZXQudmFsdWV9KX0gY2xhc3NOYW1lPVwidy1mdWxsIHAtMiB0ZXh0LXNtIGJvcmRlciByb3VuZGVkXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPHRleHRhcmVhIHJlcXVpcmVkIHJvd3M9ezJ9IHBsYWNlaG9sZGVyPVwiRnVsbCBEZWxpdmVyeSBBZGRyZXNzICpcIiB2YWx1ZT17Y3VzdG9tZXIuYWRkcmVzc30gb25DaGFuZ2U9e2UgPT4gc2V0Q3VzdG9tZXIoey4uLmN1c3RvbWVyLCBhZGRyZXNzOiBlLnRhcmdldC52YWx1ZX0pfSBjbGFzc05hbWU9XCJ3LWZ1bGwgcC0yIHRleHQtc20gYm9yZGVyIHJvdW5kZWRcIj48L3RleHRhcmVhPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiByZXF1aXJlZCBwbGFjZWhvbGRlcj1cIlVLIFBvc3Rjb2RlICpcIiB2YWx1ZT17Y3VzdG9tZXIucG9zdGNvZGV9IG9uQ2hhbmdlPXtlID0+IHNldEN1c3RvbWVyKHsuLi5jdXN0b21lciwgcG9zdGNvZGU6IGUudGFyZ2V0LnZhbHVlfSl9IGNsYXNzTmFtZT1cInctZnVsbCBwLTIgdGV4dC1zbSBib3JkZXIgcm91bmRlZCB1cHBlcmNhc2VcIiAvPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT1cInctZnVsbCBweS0zIGJnLWVtZXJhbGQtNjAwIGhvdmVyOmJnLWVtZXJhbGQtNzAwIHRleHQtd2hpdGUgZm9udC1ib2xkIHJvdW5kZWQgdGV4dC1zbSBzaGFkb3ctbWRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBTZW5kIE9yZGVyIHRvIFdoYXRzQXBwXG4gICAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9mb3JtPlxuICAgICAgICAgICAgICAgICAgICAgIDwvPlxuICAgICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKX1cblxuICAgICAgICAgICAgey8qIEFkbWluIE1vZGFsICovfVxuICAgICAgICAgICAge2lzQWRtaW5PcGVuICYmIChcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaXhlZCBpbnNldC0wIHotNTAgYmctYmxhY2svNjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcC0zXCIgb25DbGljaz17KCkgPT4gc2V0SXNBZG1pbk9wZW4oZmFsc2UpfT5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImJnLXdoaXRlIHctZnVsbCBtYXgtdy0yeGwgcm91bmRlZC14bCBzaGFkb3ctMnhsIG92ZXJmbG93LWhpZGRlbiBtYXgtaC1bOTB2aF0gZmxleCBmbGV4LWNvbFwiIG9uQ2xpY2s9e2UgPT4gZS5zdG9wUHJvcGFnYXRpb24oKX0+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInB4LTUgcHktNCBiZy1uZXV0cmFsLTkwMCB0ZXh0LXdoaXRlIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlblwiPlxuICAgICAgICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwiZm9udC1ib2xkIHRleHQtYmFzZVwiPkFkbWluIFBhbmVsIOKAlCBBZGQgLyBNYW5hZ2UgUHJvZHVjdHM8L2gyPlxuICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9eygpID0+IHNldElzQWRtaW5PcGVuKGZhbHNlKX0gY2xhc3NOYW1lPVwidGV4dC1uZXV0cmFsLTQwMCBmb250LWJvbGRcIj7inJU8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInAtNSBvdmVyZmxvdy15LWF1dG8gc3BhY2UteS00XCI+XG4gICAgICAgICAgICAgICAgICAgIDxmb3JtIG9uU3VibWl0PXtlID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgICAgICAgICAgICAgICAgICAgY29uc3QgZm9ybSA9IGUudGFyZ2V0O1xuICAgICAgICAgICAgICAgICAgICAgIGNvbnN0IG5ld1Byb2QgPSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBpZDogYHByb2QtJHtEYXRlLm5vdygpfWAsXG4gICAgICAgICAgICAgICAgICAgICAgICBjb2RlOiBgVUtGLSR7TWF0aC5mbG9vcigxMDAgKyBNYXRoLnJhbmRvbSgpICogOTAwKX1gLFxuICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGU6IGZvcm0udGl0bGUudmFsdWUsXG4gICAgICAgICAgICAgICAgICAgICAgICBjYXRlZ29yeTogZm9ybS5jYXRlZ29yeS52YWx1ZSxcbiAgICAgICAgICAgICAgICAgICAgICAgIG9yaWdpbmFsUHJpY2U6IE51bWJlcihmb3JtLm9yaWdQcmljZS52YWx1ZSkgfHwgTnVtYmVyKGZvcm0uc2FsZVByaWNlLnZhbHVlKSxcbiAgICAgICAgICAgICAgICAgICAgICAgIHNhbGVQcmljZTogTnVtYmVyKGZvcm0uc2FsZVByaWNlLnZhbHVlKSxcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG91cnM6IGZvcm0uY29sb3Vycy52YWx1ZS5zcGxpdCgnLCcpLm1hcChzID0+IHMudHJpbSgpKS5maWx0ZXIoQm9vbGVhbiksXG4gICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogZm9ybS5kZXNjLnZhbHVlLFxuICAgICAgICAgICAgICAgICAgICAgICAgaW1hZ2VzOiBbLi4uU0FNUExFX0lNQUdFU10sXG4gICAgICAgICAgICAgICAgICAgICAgICBpblN0b2NrOiB0cnVlXG4gICAgICAgICAgICAgICAgICAgICAgfTtcbiAgICAgICAgICAgICAgICAgICAgICBzZXRQcm9kdWN0cyhbbmV3UHJvZCwgLi4ucHJvZHVjdHNdKTtcbiAgICAgICAgICAgICAgICAgICAgICBzZXRJc0FkbWluT3BlbihmYWxzZSk7XG4gICAgICAgICAgICAgICAgICAgICAgc2hvd1RvYXN0KGBBZGRlZCBwcm9kdWN0ICR7bmV3UHJvZC5jb2RlfWApO1xuICAgICAgICAgICAgICAgICAgICB9fSBjbGFzc05hbWU9XCJzcGFjZS15LTNcIj5cbiAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrIHRleHQteHMgZm9udC1zZW1pYm9sZCBtYi0xXCI+UHJvZHVjdCBUaXRsZSAqPC9sYWJlbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCBuYW1lPVwidGl0bGVcIiByZXF1aXJlZCBwbGFjZWhvbGRlcj1cImUuZy4gV2luZHNvciBWZWx2ZXQgU29mYVwiIGNsYXNzTmFtZT1cInctZnVsbCBwLTIgdGV4dC1zbSBib3JkZXIgcm91bmRlZFwiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0yIGdhcC0zXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC14cyBmb250LXNlbWlib2xkIG1iLTFcIj5TYWxlIFByaWNlICjCoykgKjwvbGFiZWw+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dCBuYW1lPVwic2FsZVByaWNlXCIgdHlwZT1cIm51bWJlclwiIHJlcXVpcmVkIHBsYWNlaG9sZGVyPVwiNDk5XCIgY2xhc3NOYW1lPVwidy1mdWxsIHAtMiB0ZXh0LXNtIGJvcmRlciByb3VuZGVkIGZvbnQtbW9ub1wiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9XCJibG9jayB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgbWItMVwiPk9yaWdpbmFsIFByaWNlICjCoyk8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgbmFtZT1cIm9yaWdQcmljZVwiIHR5cGU9XCJudW1iZXJcIiBwbGFjZWhvbGRlcj1cIjY5OVwiIGNsYXNzTmFtZT1cInctZnVsbCBwLTIgdGV4dC1zbSBib3JkZXIgcm91bmRlZCBmb250LW1vbm9cIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9XCJibG9jayB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgbWItMVwiPkNhdGVnb3J5ICo8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHNlbGVjdCBuYW1lPVwiY2F0ZWdvcnlcIiBjbGFzc05hbWU9XCJ3LWZ1bGwgcC0yIHRleHQtc20gYm9yZGVyIHJvdW5kZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAge0NBVEVHT1JJRVMuZmlsdGVyKGMgPT4gYyAhPT0gJ0FsbCBQcm9kdWN0cycpLm1hcChjID0+IDxvcHRpb24ga2V5PXtjfSB2YWx1ZT17Y30+e2N9PC9vcHRpb24+KX1cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvc2VsZWN0PlxuICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC14cyBmb250LXNlbWlib2xkIG1iLTFcIj5Db2xvdXJzIChjb21tYSBzZXBhcmF0ZWQpICo8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGlucHV0IG5hbWU9XCJjb2xvdXJzXCIgZGVmYXVsdFZhbHVlPVwiQ2hhcmNvYWwgR3JleSwgTmF2eSBCbHVlLCBDcmVhbVwiIGNsYXNzTmFtZT1cInctZnVsbCBwLTIgdGV4dC1zbSBib3JkZXIgcm91bmRlZFwiIC8+XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9XCJibG9jayB0ZXh0LXhzIGZvbnQtc2VtaWJvbGQgbWItMVwiPkRlc2NyaXB0aW9uPC9sYWJlbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZXh0YXJlYSBuYW1lPVwiZGVzY1wiIHJvd3M9ezJ9IGRlZmF1bHRWYWx1ZT1cIkhpZ2ggcXVhbGl0eSBVSyBmdXJuaXR1cmUuXCIgY2xhc3NOYW1lPVwidy1mdWxsIHAtMiB0ZXh0LXNtIGJvcmRlciByb3VuZGVkXCI+PC90ZXh0YXJlYT5cbiAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9XCJzdWJtaXRcIiBjbGFzc05hbWU9XCJ3LWZ1bGwgcHktMi41IGJnLW5ldXRyYWwtOTAwIHRleHQtd2hpdGUgZm9udC1ib2xkIHJvdW5kZWQgdGV4dC1zbVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgUHVibGlzaCBQcm9kdWN0IChBdXRvLWdlbmVyYXRlcyBDb2RlICYgMTArIEdhbGxlcnkgSW1hZ2VzKVxuICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICA8L2Zvcm0+XG5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJib3JkZXItdCBwdC00XCI+XG4gICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtYm9sZCB0ZXh0LXNtIG1iLTJcIj5FeGlzdGluZyBQcm9kdWN0cyAoe3Byb2R1Y3RzLmxlbmd0aH0pPC9oMz5cbiAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktMiBtYXgtaC00OCBvdmVyZmxvdy15LWF1dG9cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIHtwcm9kdWN0cy5tYXAocCA9PiAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYga2V5PXtwLmlkfSBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gcC0yIGJvcmRlciByb3VuZGVkIHRleHQteHNcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj48c3Ryb25nPntwLmNvZGV9PC9zdHJvbmc+IOKAlCB7cC50aXRsZX0gKMKje3Auc2FsZVByaWNlfSk8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBzZXRQcm9kdWN0cyhwcm9kdWN0cy5maWx0ZXIoeCA9PiB4LmlkICE9PSBwLmlkKSl9IGNsYXNzTmFtZT1cInRleHQtcm9zZS02MDAgaG92ZXI6dW5kZXJsaW5lXCI+RGVsZXRlPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKX1cblxuICAgICAgICAgICAgey8qIFRvYXN0ICovfVxuICAgICAgICAgICAge3RvYXN0ICYmIChcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmaXhlZCBib3R0b20tNiByaWdodC00IHotNTAgYmctbmV1dHJhbC05MDAgdGV4dC13aGl0ZSB0ZXh0LXhzIHB4LTQgcHktMi41IHJvdW5kZWQgc2hhZG93LXhsXCI+XG4gICAgICAgICAgICAgICAge3RvYXN0fVxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICk7XG4gICAgICB9XG5cbiAgICAgIFJlYWN0RE9NLnJlbmRlcig8QXBwIC8+LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKTtcbiAgICAiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFDTSxhQUF5QyxLQUFLO0VBQXRDLFFBQVEsVUFBUixRQUFRO0VBQUUsU0FBUyxVQUFULFNBQVM7RUFBRSxPQUFPLFVBQVAsT0FBTztBQUVwQyxJQUFNLGVBQWUsR0FBRyxlQUFlO0FBQ3ZDLElBQU0sWUFBWSxHQUFHLGNBQWM7QUFFbkMsSUFBTSxVQUFVLEdBQUcsQ0FDakIsY0FBYyxFQUNkLGlCQUFpQixFQUNqQixtQkFBbUIsRUFDbkIsYUFBYSxFQUNiLGlCQUFpQixFQUNqQixxQkFBcUIsQ0FDdEI7QUFFRCxJQUFNLGdCQUFnQixHQUFHLENBQ3ZCO0VBQ0UsRUFBRSxFQUFFLFFBQVE7RUFDWixJQUFJLEVBQUUsU0FBUztFQUNmLEtBQUssRUFBRSw4Q0FBOEM7RUFDckQsUUFBUSxFQUFFLGlCQUFp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</script></head>
+  <body class="bg-neutral-100 text-neutral-900 font-sans antialiased">
+    <div id="root"><div class="min-h-screen flex flex-col bg-neutral-100"><header class="sticky top-0 z-40 bg-white border-b border-neutral-200 shadow-xs"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3"><div class="flex items-center gap-2"><a href="#" class="font-bold text-xl sm:text-2xl tracking-tight text-neutral-900">UK <span class="text-neutral-700 font-semibold">Furniture</span></a><span class="hidden md:inline-block px-2 py-0.5 rounded text-xs font-medium bg-neutral-100 text-neutral-600 border">Direct UK Catalogue</span></div><div class="hidden sm:flex flex-1 max-w-md mx-4"><input type="text" placeholder="Search sofas, beds, dining, product code..." class="w-full px-4 py-2 text-sm bg-neutral-50 border border-neutral-300 rounded-md focus:bg-white focus:outline-none focus:border-neutral-900" value=""></div><div class="flex items-center gap-2 sm:gap-3"><a href="https://wa.me/447862600142?text=Hello%20UK%20Furniture%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md text-xs sm:text-sm font-medium"><span>WhatsApp</span><span class="font-mono text-xs hidden lg:inline">+447862600142</span></a><button class="px-2.5 py-1.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md text-xs sm:text-sm font-medium flex items-center gap-1 shadow-xs" title="Download complete website as a single index.html file"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg><span>Download file</span></button><button class="px-2.5 py-1.5 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 rounded-md text-xs sm:text-sm font-medium border border-neutral-300">Admin / Add</button><button class="relative inline-flex items-center justify-center p-2 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg></button></div></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2.5 flex items-center gap-2 overflow-x-auto scrollbar-none border-t border-neutral-100 pt-2"><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-900 text-white">All Products</button><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Sofas &amp; Couches</button><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Beds &amp; Mattresses</button><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Dining Sets</button><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Living &amp; Tables</button><button class="whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Wardrobes &amp; Storage</button></div></header><main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6"><div class="flex items-center justify-between mb-4 pb-2 border-b"><h1 class="text-base sm:text-lg font-bold">All Furniture Listings</h1><span class="text-xs text-neutral-500 font-mono">(4 items)</span></div><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"><div class="group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"><div class="relative aspect-4/3 w-full bg-neutral-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Kensington Velvet 3-Seater Chesterfield Sofa" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"><div class="absolute top-2.5 left-2.5"><span class="px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded">UKF-101</span></div><div class="absolute top-2.5 right-2.5"><span class="px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded">SAVE 33%</span></div></div><div class="p-4 flex-1 flex flex-col justify-between"><div><p class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Sofas &amp; Couches</p><h3 class="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2">Kensington Velvet 3-Seater Chesterfield Sofa</h3><div class="flex items-baseline gap-2 mb-3"><span class="text-lg font-bold font-mono">£599</span><span class="text-xs text-neutral-400 line-through font-mono">£899</span></div><div class="mb-3"><div class="flex flex-wrap gap-1"><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-900 text-white border-neutral-900">Royal Navy</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Emerald Green</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Charcoal Grey</button></div></div></div><button class="w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors bg-neutral-900 hover:bg-neutral-800 text-white">Add to Cart</button></div></div><div class="group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"><div class="relative aspect-4/3 w-full bg-neutral-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Windsor Ottoman Gas-Lift Storage Bed (King Size)" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"><div class="absolute top-2.5 left-2.5"><span class="px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded">UKF-201</span></div><div class="absolute top-2.5 right-2.5"><span class="px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded">SAVE 36%</span></div></div><div class="p-4 flex-1 flex flex-col justify-between"><div><p class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Beds &amp; Mattresses</p><h3 class="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2">Windsor Ottoman Gas-Lift Storage Bed (King Size)</h3><div class="flex items-baseline gap-2 mb-3"><span class="text-lg font-bold font-mono">£479</span><span class="text-xs text-neutral-400 line-through font-mono">£749</span></div><div class="mb-3"><div class="flex flex-wrap gap-1"><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-900 text-white border-neutral-900">Slate Grey</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Oatmeal Linen</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Midnight Blue</button></div></div></div><button class="w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors bg-neutral-900 hover:bg-neutral-800 text-white">Add to Cart</button></div></div><div class="group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"><div class="relative aspect-4/3 w-full bg-neutral-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Cotswold Solid Natural Oak 6-Seater Dining Table" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"><div class="absolute top-2.5 left-2.5"><span class="px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded">UKF-301</span></div><div class="absolute top-2.5 right-2.5"><span class="px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded">SAVE 36%</span></div></div><div class="p-4 flex-1 flex flex-col justify-between"><div><p class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Dining Sets</p><h3 class="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2">Cotswold Solid Natural Oak 6-Seater Dining Table</h3><div class="flex items-baseline gap-2 mb-3"><span class="text-lg font-bold font-mono">£449</span><span class="text-xs text-neutral-400 line-through font-mono">£699</span></div><div class="mb-3"><div class="flex flex-wrap gap-1"><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-900 text-white border-neutral-900">Natural Oak</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Smoked Walnut</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Washed Ash</button></div></div></div><button class="w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors bg-neutral-900 hover:bg-neutral-800 text-white">Add to Cart</button></div></div><div class="group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"><div class="relative aspect-4/3 w-full bg-neutral-100 overflow-hidden"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Chelsea Modern Corner Reversible Chaise Sofa" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"><div class="absolute top-2.5 left-2.5"><span class="px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded">UKF-102</span></div><div class="absolute top-2.5 right-2.5"><span class="px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded">SAVE 35%</span></div></div><div class="p-4 flex-1 flex flex-col justify-between"><div><p class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Sofas &amp; Couches</p><h3 class="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2">Chelsea Modern Corner Reversible Chaise Sofa</h3><div class="flex items-baseline gap-2 mb-3"><span class="text-lg font-bold font-mono">£649</span><span class="text-xs text-neutral-400 line-through font-mono">£999</span></div><div class="mb-3"><div class="flex flex-wrap gap-1"><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-900 text-white border-neutral-900">Graphite Grey</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Sand Beige</button><button class="text-[11px] px-1.5 py-0.5 rounded border bg-neutral-50 text-neutral-700 border-neutral-200">Forest Green</button></div></div></div><button class="w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors bg-neutral-900 hover:bg-neutral-800 text-white">Add to Cart</button></div></div></div></main></div></div>
+
+    <script type="text/babel">
+      const { useState, useEffect, useMemo } = React;
+
+      const WHATSAPP_NUMBER = '+447862600142';
+      const WHATSAPP_RAW = '447862600142';
+
+      const CATEGORIES = [
+        'All Products',
+        'Sofas & Couches',
+        'Beds & Mattresses',
+        'Dining Sets',
+        'Living & Tables',
+        'Wardrobes & Storage'
+      ];
+
+      const INITIAL_PRODUCTS = [
+        {
+          id: 'prod-1',
+          code: 'UKF-101',
+          title: 'Kensington Velvet 3-Seater Chesterfield Sofa',
+          category: 'Sofas & Couches',
+          originalPrice: 899,
+          salePrice: 599,
+          colours: ['Royal Navy', 'Emerald Green', 'Charcoal Grey', 'Champagne Cream', 'Mustard Yellow'],
+          images: [
+            'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=1000&q=80'
+          ],
+          description: 'The Kensington Chesterfield 3-Seater Sofa combines timeless British craftsmanship with modern deep-foam comfort. Features hand-tufted button detailing, durable premium velvet upholstery, scrolled arms, and solid turned wooden feet.',
+          dimensions: 'W: 215cm | D: 95cm | H: 78cm',
+          material: 'Premium Stain-Resistant Velvet & Solid Birch Frame',
+          inStock: true
+        },
+        {
+          id: 'prod-2',
+          code: 'UKF-201',
+          title: 'Windsor Ottoman Gas-Lift Storage Bed (King Size)',
+          category: 'Beds & Mattresses',
+          originalPrice: 749,
+          salePrice: 479,
+          colours: ['Slate Grey', 'Oatmeal Linen', 'Midnight Blue', 'Silver Birch'],
+          images: [
+            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1578898887932-dce23a595ad4?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=80'
+          ],
+          description: 'Maximize your bedroom space with the Windsor Ottoman Bed. Featuring an easy hydraulic gas-lift mechanism that opens effortlessly to reveal full under-bed storage.',
+          dimensions: 'King (5ft): W: 162cm | L: 215cm | Headboard H: 128cm',
+          material: 'Textured Weave Linen Fabric & Reinforced Steel Hydraulic Base',
+          inStock: true
+        },
+        {
+          id: 'prod-3',
+          code: 'UKF-301',
+          title: 'Cotswold Solid Natural Oak 6-Seater Dining Table',
+          category: 'Dining Sets',
+          originalPrice: 699,
+          salePrice: 449,
+          colours: ['Natural Oak', 'Smoked Walnut', 'Washed Ash', 'Rustic Dark Oak'],
+          images: [
+            'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1597072689227-8882273e8f6a?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?auto=format&fit=crop&w=1000&q=80'
+          ],
+          description: 'Crafted from sustainable European white oak, the Cotswold Dining Table features a robust 40mm thick solid top with chamfered edges and sturdy tapered legs.',
+          dimensions: 'L: 180cm | W: 90cm | H: 76cm',
+          material: '100% Solid European Oak',
+          inStock: true
+        },
+        {
+          id: 'prod-4',
+          code: 'UKF-102',
+          title: 'Chelsea Modern Corner Reversible Chaise Sofa',
+          category: 'Sofas & Couches',
+          originalPrice: 999,
+          salePrice: 649,
+          colours: ['Graphite Grey', 'Sand Beige', 'Forest Green', 'Denim Blue'],
+          images: [
+            'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80',
+            'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80'
+          ],
+          description: 'Designed for modern UK living rooms, the Chelsea Corner Sofa has a modular reversible chaise section that can be positioned on either the left or right side.',
+          dimensions: 'W: 240cm | Chaise D: 155cm | H: 85cm',
+          material: 'Hardwearing Chenille Bouclé Weave',
+          inStock: true
+        }
+      ];
+
+      const SAMPLE_IMAGES = [
+        'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80',
+        'https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=1000&q=80'
+      ];
+
+      function App() {
+        const [products, setProducts] = useState(() => {
+          try {
+            const saved = localStorage.getItem('uk_furniture_products');
+            if (saved) return JSON.parse(saved);
+          } catch {}
+          return INITIAL_PRODUCTS;
+        });
+
+        const [cart, setCart] = useState(() => {
+          try {
+            const saved = localStorage.getItem('uk_furniture_cart');
+            if (saved) return JSON.parse(saved);
+          } catch {}
+          return [];
+        });
+
+        const [search, setSearch] = useState('');
+        const [category, setCategory] = useState('All Products');
+        const [selectedProduct, setSelectedProduct] = useState(null);
+        const [isCartOpen, setIsCartOpen] = useState(false);
+        const [isAdminOpen, setIsAdminOpen] = useState(false);
+        const [editingProduct, setEditingProduct] = useState(null);
+        const [toast, setToast] = useState(null);
+
+        // Checkout form state
+        const [customer, setCustomer] = useState({ fullName: '', phone: '', address: '', postcode: '' });
+
+        useEffect(() => {
+          localStorage.setItem('uk_furniture_products', JSON.stringify(products));
+        }, [products]);
+
+        useEffect(() => {
+          localStorage.setItem('uk_furniture_cart', JSON.stringify(cart));
+        }, [cart]);
+
+        const showToast = (msg) => {
+          setToast(msg);
+          setTimeout(() => setToast(null), 2500);
+        };
+
+        const handleAddToCart = (product, colour, qty = 1) => {
+          setCart(prev => {
+            const index = prev.findIndex(item => item.productId === product.id && item.colour === colour);
+            if (index > -1) {
+              const updated = [...prev];
+              updated[index].qty += qty;
+              return updated;
+            }
+            return [...prev, {
+              id: `${product.id}-${colour}-${Date.now()}`,
+              productId: product.id,
+              code: product.code,
+              title: product.title,
+              image: product.images[0],
+              colour,
+              salePrice: product.salePrice,
+              qty
+            }];
+          });
+          showToast(`Added "${product.title}" to cart`);
+        };
+
+        const filteredProducts = useMemo(() => {
+          return products.filter(p => {
+            const matchCat = category === 'All Products' || p.category === category;
+            const q = search.toLowerCase().trim();
+            if (!q) return matchCat;
+            const matchSearch = p.title.toLowerCase().includes(q) || p.code.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || p.colours.some(c => c.toLowerCase().includes(q));
+            return matchCat && matchSearch;
+          });
+        }, [products, category, search]);
+
+        const totalCartCount = cart.reduce((acc, item) => acc + item.qty, 0);
+        const totalAmount = cart.reduce((acc, item) => acc + item.salePrice * item.qty, 0);
+
+        const handlePlaceOrder = (e) => {
+          e.preventDefault();
+          if (cart.length === 0) return;
+
+          const customerBlock = `NEW ORDER\n\nCustomer Name: ${customer.fullName}\nCustomer Phone: ${customer.phone}\nDelivery Address: ${customer.address}\nPostcode: ${customer.postcode.toUpperCase()}\n`;
+          const productBlocks = cart.map(item => `Product: ${item.title}\nProduct Code: ${item.code}\nColour: ${item.colour}\nQuantity: ${item.qty}\nPrice: £${(item.salePrice * item.qty).toLocaleString('en-GB')}`).join('\n\n');
+          const totalBlock = `\n\nTotal: £${totalAmount.toLocaleString('en-GB')}\n\nOrder request will be confirmed through WhatsApp.`;
+
+          const msg = `${customerBlock}\n${productBlocks}${totalBlock}`;
+          const url = `https://wa.me/${WHATSAPP_RAW}?text=${encodeURIComponent(msg)}`;
+          window.open(url, '_blank');
+        };
+
+        return (
+          <div className="min-h-screen flex flex-col bg-neutral-100">
+            {/* Header */}
+            <header className="sticky top-0 z-40 bg-white border-b border-neutral-200 shadow-xs">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <a href="#" className="font-bold text-xl sm:text-2xl tracking-tight text-neutral-900">
+                    UK <span className="text-neutral-700 font-semibold">Furniture</span>
+                  </a>
+                  <span className="hidden md:inline-block px-2 py-0.5 rounded text-xs font-medium bg-neutral-100 text-neutral-600 border">
+                    Direct UK Catalogue
+                  </span>
+                </div>
+
+                <div className="hidden sm:flex flex-1 max-w-md mx-4">
+                  <input
+                    type="text"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    placeholder="Search sofas, beds, dining, product code..."
+                    className="w-full px-4 py-2 text-sm bg-neutral-50 border border-neutral-300 rounded-md focus:bg-white focus:outline-none focus:border-neutral-900"
+                  />
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <a
+                    href={`https://wa.me/${WHATSAPP_RAW}?text=` + encodeURIComponent('Hello UK Furniture, I have an inquiry.' )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md text-xs sm:text-sm font-medium"
+                  >
+                    <span>WhatsApp</span>
+                    <span className="font-mono text-xs hidden lg:inline">{WHATSAPP_NUMBER}</span>
+                  </a>
+
+                  <button
+                    onClick={() => {
+                      const htmlContent = '<!doctype html>\n' + document.documentElement.outerHTML;
+                      const blob = new Blob([htmlContent], { type: 'text/html' });
+                      const url = URL.createObjectURL(blob);
+                      const a = document.createElement('a');
+                      a.href = url;
+                      a.download = 'index.html';
+                      document.body.appendChild(a);
+                      a.click();
+                      document.body.removeChild(a);
+                      URL.revokeObjectURL(url);
+                    }}
+                    className="px-2.5 py-1.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md text-xs sm:text-sm font-medium flex items-center gap-1 shadow-xs"
+                    title="Download complete website as a single index.html file"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    <span>Download file</span>
+                  </button>
+
+                  <button
+                    onClick={() => { setEditingProduct(null); setIsAdminOpen(true); }}
+                    className="px-2.5 py-1.5 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 rounded-md text-xs sm:text-sm font-medium border border-neutral-300"
+                  >
+                    Admin / Add
+                  </button>
+
+                  <button
+                    onClick={() => setIsCartOpen(true)}
+                    className="relative inline-flex items-center justify-center p-2 bg-neutral-900 hover:bg-neutral-800 text-white rounded-md"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    {totalCartCount > 0 && (
+                      <span className="absolute -top-1.5 -right-1.5 bg-emerald-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center border-2 border-white">
+                        {totalCartCount}
+                      </span>
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              {/* Categories */}
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2.5 flex items-center gap-2 overflow-x-auto scrollbar-none border-t border-neutral-100 pt-2">
+                {CATEGORIES.map(cat => (
+                  <button
+                    key={cat}
+                    onClick={() => setCategory(cat)}
+                    className={`whitespace-nowrap px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors ${category === cat ? 'bg-neutral-900 text-white' : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'}`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+            </header>
+
+            {/* Main Products Grid */}
+            <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+              <div className="flex items-center justify-between mb-4 pb-2 border-b">
+                <h1 className="text-base sm:text-lg font-bold">{category === 'All Products' ? 'All Furniture Listings' : category}</h1>
+                <span className="text-xs text-neutral-500 font-mono">({filteredProducts.length} items)</span>
+              </div>
+
+              {filteredProducts.length === 0 ? (
+                <div className="text-center py-16 bg-white rounded-lg border p-8">
+                  <h3 className="text-lg font-bold mb-1">No products found</h3>
+                  <button onClick={() => { setSearch(''); setCategory('All Products'); }} className="mt-2 px-4 py-2 bg-neutral-900 text-white rounded text-xs">Reset Filters</button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {filteredProducts.map(product => {
+                    const [colour, setColour] = useState(product.colours[0] || 'Default');
+                    const [added, setAdded] = useState(false);
+                    const discount = Math.round(((product.originalPrice - product.salePrice) / product.originalPrice) * 100);
+
+                    return (
+                      <div
+                        key={product.id}
+                        onClick={() => setSelectedProduct(product)}
+                        className="group bg-white rounded-lg border border-neutral-200 overflow-hidden hover:border-neutral-400 hover:shadow-md transition-all flex flex-col cursor-pointer"
+                      >
+                        <div className="relative aspect-4/3 w-full bg-neutral-100 overflow-hidden">
+                          <img src={product.images[0]} alt={product.title} referrerPolicy="no-referrer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                          <div className="absolute top-2.5 left-2.5">
+                            <span className="px-2 py-0.5 bg-neutral-900 text-white font-mono font-medium text-xs rounded">{product.code}</span>
+                          </div>
+                          {discount > 0 && (
+                            <div className="absolute top-2.5 right-2.5">
+                              <span className="px-2 py-0.5 bg-rose-600 text-white font-semibold text-xs rounded">SAVE {discount}%</span>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="p-4 flex-1 flex flex-col justify-between">
+                          <div>
+                            <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">{product.category}</p>
+                            <h3 className="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2">{product.title}</h3>
+                            <div className="flex items-baseline gap-2 mb-3">
+                              <span className="text-lg font-bold font-mono">£{product.salePrice.toLocaleString('en-GB')}</span>
+                              {product.originalPrice > product.salePrice && (
+                                <span className="text-xs text-neutral-400 line-through font-mono">£{product.originalPrice.toLocaleString('en-GB')}</span>
+                              )}
+                            </div>
+                            <div className="mb-3" onClick={e => e.stopPropagation()}>
+                              <div className="flex flex-wrap gap-1">
+                                {product.colours.slice(0, 3).map(c => (
+                                  <button
+                                    key={c}
+                                    onClick={() => setColour(c)}
+                                    className={`text-[11px] px-1.5 py-0.5 rounded border ${colour === c ? 'bg-neutral-900 text-white border-neutral-900' : 'bg-neutral-50 text-neutral-700 border-neutral-200'}`}
+                                  >
+                                    {c}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleAddToCart(product, colour);
+                              setAdded(true);
+                              setTimeout(() => setAdded(false), 1500);
+                            }}
+                            className={`w-full py-2 rounded text-xs sm:text-sm font-semibold transition-colors ${added ? 'bg-emerald-600 text-white' : 'bg-neutral-900 hover:bg-neutral-800 text-white'}`}
+                          >
+                            {added ? 'Added to Cart!' : 'Add to Cart'}
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </main>
+
+            {/* Product Detail Modal */}
+            {selectedProduct && (
+              <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-3 sm:p-6" onClick={() => setSelectedProduct(null)}>
+                <div className="bg-white w-full max-w-4xl rounded-xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                  <div className="px-4 py-3 border-b bg-neutral-50 flex items-center justify-between">
+                    <span className="font-mono text-xs font-semibold px-2 py-0.5 bg-neutral-900 text-white rounded">{selectedProduct.code}</span>
+                    <button onClick={() => setSelectedProduct(null)} className="text-neutral-500 hover:text-neutral-900 font-bold px-2">✕</button>
+                  </div>
+
+                  <div className="p-4 sm:p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Gallery */}
+                    <div className="space-y-3">
+                      <div className="aspect-4/3 bg-neutral-100 rounded-lg overflow-hidden border">
+                        <img src={selectedProduct.images[0]} alt="" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                      </div>
+                      <div className="flex gap-2 overflow-x-auto pb-2">
+                        {selectedProduct.images.map((img, i) => (
+                          <img key={i} src={img} alt="" referrerPolicy="no-referrer" className="w-16 h-14 object-cover rounded border shrink-0" />
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Details */}
+                    <div className="flex flex-col justify-between space-y-4">
+                      <div>
+                        <h2 className="text-xl sm:text-2xl font-bold mb-2">{selectedProduct.title}</h2>
+                        <p className="text-2xl font-extrabold font-mono mb-4">£{selectedProduct.salePrice.toLocaleString('en-GB')}</p>
+                        <p className="text-xs sm:text-sm text-neutral-600 mb-4">{selectedProduct.description}</p>
+                        {selectedProduct.dimensions && <p className="text-xs font-mono mb-2">Dimensions: {selectedProduct.dimensions}</p>}
+                      </div>
+
+                      <div className="space-y-3">
+                        <button
+                          onClick={() => {
+                            handleAddToCart(selectedProduct, selectedProduct.colours[0]);
+                            setSelectedProduct(null);
+                          }}
+                          className="w-full py-3 bg-neutral-900 text-white font-bold rounded text-sm"
+                        >
+                          Add to Cart
+                        </button>
+                        <a
+                          href={`https://wa.me/${WHATSAPP_RAW}?text=` + encodeURIComponent(`Hello UK Furniture, I want to order product ${selectedProduct.title} (${selectedProduct.code}).`)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full py-2.5 bg-emerald-600 text-white font-medium rounded text-sm text-center block"
+                        >
+                          Inquire on WhatsApp ({WHATSAPP_NUMBER})
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Cart & Checkout Drawer */}
+            {isCartOpen && (
+              <div className="fixed inset-0 z-50 bg-black/60 flex justify-end" onClick={() => setIsCartOpen(false)}>
+                <div className="w-full max-w-lg bg-white h-full shadow-2xl flex flex-col justify-between" onClick={e => e.stopPropagation()}>
+                  <div className="px-5 py-4 border-b bg-neutral-50 flex items-center justify-between">
+                    <h2 className="font-bold text-lg">Your Cart ({totalCartCount})</h2>
+                    <button onClick={() => setIsCartOpen(false)} className="text-neutral-500 font-bold px-2">✕</button>
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto p-5 space-y-4">
+                    {cart.length === 0 ? (
+                      <p className="text-center text-neutral-500 py-12">Your cart is empty.</p>
+                    ) : (
+                      <>
+                        <div className="space-y-3">
+                          {cart.map(item => (
+                            <div key={item.id} className="flex gap-3 p-3 bg-neutral-50 rounded border items-center">
+                              <img src={item.image} alt="" referrerPolicy="no-referrer" className="w-14 h-14 object-cover rounded" />
+                              <div className="flex-1 min-w-0">
+                                <h4 className="font-semibold text-xs sm:text-sm truncate">{item.title}</h4>
+                                <p className="text-[11px] font-mono text-neutral-500">Code: {item.code} | Colour: {item.colour}</p>
+                                <p className="text-xs font-bold mt-1">Qty: {item.qty} × £{item.salePrice}</p>
+                              </div>
+                              <button onClick={() => setCart(cart.filter(i => i.id !== item.id))} className="text-rose-600 text-xs px-2">Remove</button>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="p-3 bg-neutral-100 rounded font-bold flex justify-between">
+                          <span>Total:</span>
+                          <span className="font-mono">£{totalAmount.toLocaleString('en-GB')}</span>
+                        </div>
+
+                        <form onSubmit={handlePlaceOrder} className="space-y-3 pt-3 border-t">
+                          <h3 className="font-bold text-sm">Delivery Details</h3>
+                          <input type="text" required placeholder="Full Name *" value={customer.fullName} onChange={e => setCustomer({...customer, fullName: e.target.value})} className="w-full p-2 text-sm border rounded" />
+                          <input type="tel" required placeholder="Phone Number *" value={customer.phone} onChange={e => setCustomer({...customer, phone: e.target.value})} className="w-full p-2 text-sm border rounded" />
+                          <textarea required rows={2} placeholder="Full Delivery Address *" value={customer.address} onChange={e => setCustomer({...customer, address: e.target.value})} className="w-full p-2 text-sm border rounded"></textarea>
+                          <input type="text" required placeholder="UK Postcode *" value={customer.postcode} onChange={e => setCustomer({...customer, postcode: e.target.value})} className="w-full p-2 text-sm border rounded uppercase" />
+
+                          <button type="submit" className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded text-sm shadow-md">
+                            Send Order to WhatsApp
+                          </button>
+                        </form>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Admin Modal */}
+            {isAdminOpen && (
+              <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-3" onClick={() => setIsAdminOpen(false)}>
+                <div className="bg-white w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                  <div className="px-5 py-4 bg-neutral-900 text-white flex items-center justify-between">
+                    <h2 className="font-bold text-base">Admin Panel — Add / Manage Products</h2>
+                    <button onClick={() => setIsAdminOpen(false)} className="text-neutral-400 font-bold">✕</button>
+                  </div>
+
+                  <div className="p-5 overflow-y-auto space-y-4">
+                    <form onSubmit={e => {
+                      e.preventDefault();
+                      const form = e.target;
+                      const newProd = {
+                        id: `prod-${Date.now()}`,
+                        code: `UKF-${Math.floor(100 + Math.random() * 900)}`,
+                        title: form.title.value,
+                        category: form.category.value,
+                        originalPrice: Number(form.origPrice.value) || Number(form.salePrice.value),
+                        salePrice: Number(form.salePrice.value),
+                        colours: form.colours.value.split(',').map(s => s.trim()).filter(Boolean),
+                        description: form.desc.value,
+                        images: [...SAMPLE_IMAGES],
+                        inStock: true
+                      };
+                      setProducts([newProd, ...products]);
+                      setIsAdminOpen(false);
+                      showToast(`Added product ${newProd.code}`);
+                    }} className="space-y-3">
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">Product Title *</label>
+                        <input name="title" required placeholder="e.g. Windsor Velvet Sofa" className="w-full p-2 text-sm border rounded" />
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div>
+                          <label className="block text-xs font-semibold mb-1">Sale Price (£) *</label>
+                          <input name="salePrice" type="number" required placeholder="499" className="w-full p-2 text-sm border rounded font-mono" />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-semibold mb-1">Original Price (£)</label>
+                          <input name="origPrice" type="number" placeholder="699" className="w-full p-2 text-sm border rounded font-mono" />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">Category *</label>
+                        <select name="category" className="w-full p-2 text-sm border rounded">
+                          {CATEGORIES.filter(c => c !== 'All Products').map(c => <option key={c} value={c}>{c}</option>)}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">Colours (comma separated) *</label>
+                        <input name="colours" defaultValue="Charcoal Grey, Navy Blue, Cream" className="w-full p-2 text-sm border rounded" />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-semibold mb-1">Description</label>
+                        <textarea name="desc" rows={2} defaultValue="High quality UK furniture." className="w-full p-2 text-sm border rounded"></textarea>
+                      </div>
+                      <button type="submit" className="w-full py-2.5 bg-neutral-900 text-white font-bold rounded text-sm">
+                        Publish Product (Auto-generates Code & 10+ Gallery Images)
+                      </button>
+                    </form>
+
+                    <div className="border-t pt-4">
+                      <h3 className="font-bold text-sm mb-2">Existing Products ({products.length})</h3>
+                      <div className="space-y-2 max-h-48 overflow-y-auto">
+                        {products.map(p => (
+                          <div key={p.id} className="flex items-center justify-between p-2 border rounded text-xs">
+                            <span><strong>{p.code}</strong> — {p.title} (£{p.salePrice})</span>
+                            <button onClick={() => setProducts(products.filter(x => x.id !== p.id))} className="text-rose-600 hover:underline">Delete</button>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Toast */}
+            {toast && (
+              <div className="fixed bottom-6 right-4 z-50 bg-neutral-900 text-white text-xs px-4 py-2.5 rounded shadow-xl">
+                {toast}
+              </div>
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  
+
+</body></html>
